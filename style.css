@@ -55,23 +55,29 @@ nav a:hover { color: var(--text); }
 
 /* hero: text left, image right, sized to fit one screen */
 .hero { padding: 1.75rem 0 0.5rem; }
-.hero-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2rem; align-items: center; }
+.hero-grid { display: grid; grid-template-columns: 1.35fr 0.65fr; gap: 2rem; align-items: center; }
 h1 {
   font-family: var(--display); font-weight: 700;
-  font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 0.98; margin: 0 0 0.65rem;
+  font-size: clamp(2.2rem, 5vw, 3.6rem); line-height: 0.98; margin: 0 0 0.55rem;
 }
-.tagline { font-size: 1.15rem; font-weight: 600; color: var(--green); margin: 0 0 0.6rem; }
+.tagline {
+  font-family: var(--display); font-weight: 600;
+  font-size: clamp(1.18rem, 2.65vw, 1.92rem); line-height: 1.15;
+  color: var(--green); margin: 0 0 0.7rem;
+}
 .lead { font-size: 1.1rem; color: var(--muted); max-width: 30rem; margin: 0; }
 .frame { margin: 0; border-radius: 8px; overflow: hidden; box-shadow: 0 0 0 1px var(--line); background: var(--panel); }
 .hero-img { width: fit-content; max-width: 100%; margin-left: auto; box-shadow: 0 0 0 1px rgba(59,224,113,0.45), 0 0 50px rgba(59,224,113,0.14); }
-.hero-img img { width: auto; max-width: 100%; max-height: min(40vh, 18.5rem); }
+.hero-img img { width: auto; max-width: 100%; max-height: min(32vh, 14.5rem); }
 
 /* sections */
 section { padding: 2.25rem 0 0.25rem; }
-#how { padding-top: 4.25rem; }
+#how { padding-top: 5.5rem; }
+#how > .wrap > h2,
+#how > .wrap > .intro { text-align: center; }
 h2 { font-family: var(--display); font-weight: 600; font-size: clamp(1.5rem, 3.5vw, 1.9rem); line-height: 1.1; margin: 0 0 0.6rem; }
 h3 { font-family: var(--display); font-weight: 600; font-size: 1.4rem; line-height: 1.15; margin: 0 0 0.5rem; }
-.intro { color: var(--muted); margin-bottom: 0; }
+.intro { color: var(--muted); margin-bottom: 0.75rem; }
 
 .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; margin-top: 1rem; }
 .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.15rem; }
@@ -92,11 +98,12 @@ h3 { font-family: var(--display); font-weight: 600; font-size: 1.4rem; line-heig
 .actions { display: flex; gap: 0.7rem; flex-wrap: wrap; margin-top: 0.9rem; }
 
 /* screenshot rows */
-.row { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2rem; align-items: center; margin-top: 2rem; }
+.row { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2rem; align-items: center; margin-top: 3rem; }
 .row.flip { grid-template-columns: 1.1fr 0.9fr; }
 .row.flip .text { order: 2; }
 .row .text { min-width: 0; }
 #about .row { margin-top: 0; }
+#how .intro + .row { margin-top: 2rem; }
 .zoom { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
 .zoom img { width: 100%; max-height: 22rem; object-fit: contain; object-position: top; }
 .tags { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; }
@@ -153,13 +160,14 @@ footer .copy { font-size: 0.85rem; }
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .hero-img { margin: 0 auto; }
-  .hero-img img { max-height: min(30vh, 15rem); }
+  .hero-img img { max-height: min(26vh, 12.5rem); }
   .cards { grid-template-columns: 1fr; }
-  .row, .row.flip { grid-template-columns: 1fr; gap: 1rem; margin-top: 1.75rem; }
+  .row, .row.flip { grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem; }
   .row.flip .text { order: 0; }
   .duo { grid-template-columns: 1fr; gap: 1.75rem; }
   section { padding-top: 1.75rem; }
-  #how { padding-top: 3rem; }
+  #how { padding-top: 3.75rem; }
+  .group { margin-top: 2.25rem; }
   .menu-btn { display: block; }
   .bar { flex-wrap: wrap; }
   nav {
@@ -193,9 +201,9 @@ nav a.active { background: var(--green); color: var(--green-ink); font-weight: 6
 nav a.active:hover { color: var(--green-ink); }
 
 /* grouped step with two screenshots */
-.group { margin-top: 2.75rem; }
-.group > p { color: var(--muted); max-width: 44rem; }
-.group .row { margin-top: 1.25rem; }
+.group { margin-top: 3rem; }
+.group .row:first-child { margin-top: 0; }
+.group .row + .row { margin-top: 1.75rem; }
 .sub { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.2; margin: 0 0 0.5rem; color: var(--green); }
 
 @media (max-width: 860px) {

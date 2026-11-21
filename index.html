@@ -86,7 +86,7 @@
       <div class="row">
         <div class="text">
           <h2 data-i18n="aboutH">About GafferBoard</h2>
-          <p data-i18n="aboutP">GafferBoard gives you complete control of your first-team and youth squads. Build first- and second-choice depth charts, promote talents as they develop, and plan years ahead with sales, replacements from your shortlist or academy, and transfer window budgets.</p>
+          <p data-i18n="aboutP">GafferBoard gives you complete control of your first-team and youth squads. Build first-, second- and third-choice depth charts, promote talents as they develop, and plan years ahead with sales, replacements from your shortlist or academy, and transfer window budgets.</p>
           <ul>
             <li data-i18n="aboutL1">Reads FM27 savegames and .fmf shortlists, read-only</li>
             <li data-i18n="aboutL2">Three-season planner across first team, U21, U18 and loans</li>
@@ -103,7 +103,7 @@
   <section id="how">
     <div class="wrap">
       <h2 data-i18n="howH2">How GafferBoard Works</h2>
-      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, in five steps.</p>
+      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, step by step.</p>
 
       <div class="row flip">
         <div class="text">
@@ -116,19 +116,16 @@
         </figure>
       </div>
 
-      <!-- Understand Your Squad: two screenshots. Transfers and successors are part of this step. -->
+      <!-- Understand Your Squad: two screenshots (lineup + transfers and successors). -->
       <div class="group">
-        <h3 data-i18n="u0h">Understand Your Squad</h3>
-        <p data-i18n="u0">Don’t waste time clicking between multiple Football Manager screens. GafferBoard puts your whole squad, and your plans for it, in one place.</p>
-
         <div class="row">
           <div class="text">
+            <h3 data-i18n="u0h">Understand Your Squad</h3>
             <h4 class="sub" data-i18n="uAh">See every position at a glance</h4>
-            <p data-i18n="uA1">The lineup view shows your formation on a pitch with up to three players for every position. Show age, star rating, value or contract next to each name, and click the coloured dot to mark a player as keep, consider or sell.</p>
+            <p data-i18n="uA1">View your First Team, U21 and U18 squads across all three tactics, with up to three players per position. Show age, star rating, value or contract next to each name, and click the coloured dot to mark a player as keep, consider or sell.</p>
             <p data-i18n="uA2">It helps you answer questions like:</p>
             <ul>
               <li data-i18n="r2l1">Do I have enough cover on the left side?</li>
-              <li data-i18n="r2l2">Who is my backup striker?</li>
               <li data-i18n="r2l3">Which youth player is closest to the first team?</li>
               <li data-i18n="r2l4">What happens if an important player leaves?</li>
               <li data-i18n="r2l5">How should I manage my lineup across tactics, 1st–3rd choices and the next three seasons?</li>
@@ -149,25 +146,23 @@
               <li data-i18n="tSell">Sell</li>
               <li data-i18n="tBuyRep">Buy / Replace</li>
             </ul>
-            <p data-i18n="uB2">Choose who replaces a player who leaves, from your shortlist or your academy, and see contract years next to every name, so you know who steps up before a contract runs out. Then build a long-term roadmap for how your squad should evolve, from academy player to first-team regular.</p>
+            <p data-i18n="uB2">Choose who replaces a player who leaves, from your shortlist or your academy, and see contract years next to every name, so you know who steps up before a contract runs out. Then build a long-term roadmap for how your squad should evolve, from promoting academy players to first-team regulars.</p>
           </div>
-          <!-- File name has an ampersand: images/Squad&transfers.jpg. It is written as %26 in the address. -->
+          <!-- File name has an ampersand: images/Squad&transfers.png. It is written as %26 in the address. -->
           <figure class="frame">
-            <button class="zoom" type="button" data-i18n-aria="zoomU2" aria-label="Enlarge: Squad and transfers"><img src="images/Squad%26transfers.jpg" loading="lazy" data-i18n-alt="uBalt" alt="The squad building view with players per position and planned transfers"></button>
+            <button class="zoom" type="button" data-i18n-aria="zoomU2" aria-label="Enlarge: Squad and transfers"><img src="images/Squad%26transfers.png" loading="lazy" data-i18n-alt="uBalt" alt="The squad building view with players per position and planned transfers"></button>
           </figure>
         </div>
       </div>
 
       <!-- AI & Sporting Director: two screenshots (squad advice + replacement matching). -->
       <div class="group">
-        <h3 data-i18n="sd0h">AI &amp; Sporting Director</h3>
-        <p data-i18n="sd0">Get an objective second opinion on your squad before you commit to a transfer window. Built-in Sporting Director logic flags risks automatically, with optional deep AI analysis when you want a full written review.</p>
-
         <div class="row">
           <div class="text">
+            <h3 data-i18n="sd0h">AI &amp; Sporting Director</h3>
             <h4 class="sub" data-i18n="sdAh">Live squad advice and building priorities</h4>
-            <p data-i18n="sdA1">The Sporting Director evaluates every unit in your squad and highlights what needs attention right now — from expiring contracts and outgoing players missing a replacement, to squad strengths and overall age profile.</p>
-            <p data-i18n="sdA2">Need a deeper breakdown? Run an optional Deep AI report using your own Google Gemini key or a local Ollama model directly on your PC.</p>
+            <p data-i18n="sdA1">Get an objective second opinion before you commit to a transfer window. The Sporting Director evaluates every unit in your squad and automatically flags risks — from expiring contracts and outgoing players missing a replacement, to squad strengths and overall age profile.</p>
+            <p data-i18n="sdA2">Need a full written breakdown? Run an optional Deep AI report using your own Google Gemini key or a local Ollama model directly on your PC.</p>
           </div>
           <figure class="frame">
             <button class="zoom" type="button" data-i18n-aria="zoomSD1" aria-label="Enlarge: Sporting Director squad advice"><img src="images/SportingDirectorAdvise.png" loading="lazy" data-i18n-alt="sdAalt" alt="AI Sporting Director live analysis showing unit ratings, contract warnings, sales plan gaps and shortlist suggestions"></button>
@@ -190,7 +185,7 @@
       <div class="row">
         <div class="text">
           <h3 data-i18n="r6h">Transfer Overview</h3>
-          <p data-i18n="r6p1">See an overview of the transfers that have been made and the ones that are planned, window by window.</p>
+          <p data-i18n="r6p1">See an overview of the transfers that have been made and the ones that are planned, transfer window by transfer window.</p>
           <p data-i18n="r6p2">The budget is integrated from your own savegame, so every plan is checked against your real finances.</p>
         </div>
         <figure class="frame">
@@ -206,6 +201,17 @@
         </div>
         <figure class="frame">
           <button class="zoom" type="button" data-i18n-aria="zoom3" aria-label="Enlarge: Analyse your club"><img src="images/analysis.png" loading="lazy" data-i18n-alt="r3alt" alt="Squad analysis with age distribution, strength by unit and contract expiries"></button>
+        </figure>
+      </div>
+
+      <div class="row">
+        <div class="text">
+          <h3 data-i18n="r7h">Manager &amp; Club Profile</h3>
+          <p data-i18n="r7p1">Follow your own development as a manager over time. GafferBoard records a baseline of your coaching and mental attributes from your FM27 save, so you can track how you progress season by season.</p>
+          <p data-i18n="r7p2">Review club finances and key backroom staff in one view, switch between active managers in multi-manager saves, and set your manager philosophy and traits to tailor the Deep AI Sporting Director to your style.</p>
+        </div>
+        <figure class="frame">
+          <button class="zoom" type="button" data-i18n-aria="zoom7" aria-label="Enlarge: Manager and club profile"><img src="images/managerprofile.png" loading="lazy" data-i18n-alt="r7alt" alt="Manager and club profile with coaching attributes, baseline tracking, club finances, key backroom staff and manager philosophy traits"></button>
         </figure>
       </div>
     </div>

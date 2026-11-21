@@ -34,7 +34,7 @@
     proof1: 'Ingen registrering. Ingen reklame. 100 % gratis.',
 
     aboutH: 'Om GafferBoard',
-    aboutP: 'GafferBoard gir deg full kontroll over A-laget og ungdomslagene. Sett opp første- og andrevalg for hver posisjon, flytt talenter oppover etter hvert som de utvikler seg, og planlegg flere år frem med salg, erstattere fra shortlist eller akademi, og overgangsbudsjett.',
+    aboutP: 'GafferBoard gir deg full kontroll over A-laget og ungdomslagene. Sett opp første-, andre- og tredjevalg for hver posisjon, flytt talenter oppover etter hvert som de utvikler seg, og planlegg flere år frem med salg, erstattere fra shortlist eller akademi, og overgangsbudsjett.',
     aboutL1: 'Leser FM27-saver og .fmf-shortlister, kun lesing',
     aboutL2: 'Planlegger for tre sesonger på tvers av A-lag, U21, U18 og utlån',
     aboutL3: 'Overgangsbudsjett, kontraktsvarsler og HGN/HGC-registreringsregler',
@@ -42,7 +42,7 @@
     zoomA: 'Forstørr: Om GafferBoard',
 
     howH2: 'Slik fungerer GafferBoard',
-    howIntro: 'Fra savet ditt til en plan du kan følge, i fem steg.',
+    howIntro: 'Fra savet ditt til en plan du kan følge, steg for steg.',
     r1h: 'Importer klubben din',
     r1p1: 'Start med ditt eget spill. Last inn FM27-savet og shortlistene dine, eller åpne en plan du har lagret tidligere.',
     r1p2: 'GafferBoard leser bare savet ditt. Det endrer det aldri.',
@@ -50,12 +50,10 @@
     zoom1: 'Forstørr: Importer klubben din',
 
     u0h: 'Forstå stallen din',
-    u0: 'Ikke kast bort tid på å klikke mellom flere skjermbilder i Football Manager. GafferBoard samler hele stallen og planene dine på ett sted.',
     uAh: 'Se hver posisjon med ett blikk',
-    uA1: 'Lagoppstillingen viser formasjonen på en bane, med opptil tre spillere per posisjon. Vis alder, stjerner, verdi eller kontrakt ved siden av navnet, og klikk på den fargede kula for å markere en spiller som behold, vurder eller selg.',
+    uA1: 'Se A-laget, U21 og U18 på tvers av alle tre taktikkene dine, med opptil tre spillere per posisjon. Vis alder, stjerner, verdi eller kontrakt ved siden av hvert navn, og klikk på den fargede kula for å markere en spiller som behold, vurder eller selg.',
     uA2: 'Den hjelper deg å svare på spørsmål som:',
     r2l1: 'Har jeg nok dekning på venstresiden?',
-    r2l2: 'Hvem er reservespissen min?',
     r2l3: 'Hvilken ungdomsspiller er nærmest A-laget?',
     r2l4: 'Hva skjer hvis en viktig spiller forlater klubben?',
     r2l5: 'Hvordan bør jeg styre lagoppstillingen på tvers av taktikker, første- til tredjevalg og de neste tre sesongene?',
@@ -64,16 +62,15 @@
 
     uBh: 'Planlegg overganger og etterfølgere',
     uB1: 'Bytt til stallbyggingen og se hver posisjon som en rad: hvem som er i stallen nå, hvem som er utlånt og hvem du planlegger å selge, og i hvilket overgangsvindu. Sorter spillere i:',
-    uB2: 'Velg hvem som erstatter en spiller som forlater klubben, fra shortlisten eller akademiet, og se kontraktsår ved siden av hvert navn, så du vet hvem som rykker opp før en kontrakt går ut. Lag deretter en langsiktig plan for hvordan stallen skal utvikle seg, fra akademispiller til fast A-lagsspiller.',
+    uB2: 'Velg hvem som erstatter en spiller som forlater klubben, fra shortlisten eller akademiet, og se kontraktsår ved siden av hvert navn, så du vet hvem som rykker opp før en kontrakt går ut. Lag deretter en langsiktig plan for hvordan stallen skal utvikle seg, fra å løfte opp akademispillere til faste A-lagsspillere.',
     uBalt: 'Stallbyggingen med spillere per posisjon og planlagte overganger',
     zoomU2: 'Forstørr: Stall og overganger',
     tKeep: 'Behold', tLoan: 'Lån ut', tSell: 'Selg', tBuyRep: 'Kjøp / Erstatt',
 
     sd0h: 'AI og sportsdirektør',
-    sd0: 'Få en objektiv vurdering av stallen før du binder deg til et overgangsvindu. Den innebygde sportsdirektøren fanger automatisk opp risikoer og mangler, med valgfri dybdeanalyse fra AI når du vil ha en full skriftlig rapport.',
     sdAh: 'Løpende stallråd og prioriteringer for stallbygging',
-    sdA1: 'Sportsdirektøren vurderer hver lagdel og løfter frem det som haster mest — fra utløpende kontrakter og spillere på vei ut uten erstatter, til stallens sterkeste områder og aldersprofil.',
-    sdA2: 'Vil du gå enda dypere? Kjør en valgfri AI-rapport med din egen Google Gemini-nøkkel eller en lokal Ollama-modell rett på din egen PC.',
+    sdA1: 'Få en objektiv vurdering av stallen før du binder deg til et overgangsvindu. Sportsdirektøren vurderer hver lagdel og fanger automatisk opp risikoer — fra utløpende kontrakter og spillere på vei ut uten erstatter, til stallens sterkeste områder og aldersprofil.',
+    sdA2: 'Vil du ha en full skriftlig rapport? Kjør en valgfri AI-dybdeanalyse med din egen Google Gemini-nøkkel eller en lokal Ollama-modell rett på din egen PC.',
     sdAalt: 'AI-sportsdirektørens løpende analyse med vurdering per lagdel, kontraktsvarsler, manglende erstattere og forslag fra shortlist',
     zoomSD1: 'Forstørr: Sportsdirektør – stallråd',
     sdBh: 'Smarte råd for kjøp og erstattere',
@@ -83,7 +80,7 @@
     zoomSD2: 'Forstørr: Sportsdirektør – kjøp og erstattere',
 
     r6h: 'Overgangsoversikt',
-    r6p1: 'Se en oversikt over overgangene som har vært og de som er planlagt, vindu for vindu.',
+    r6p1: 'Se en oversikt over overgangene som har vært og de som er planlagt, overgangsvindu for overgangsvindu.',
     r6p2: 'Budsjettet er integrert fra ditt eget savegame, så hver plan sjekkes mot de faktiske pengene dine.',
     r6alt: 'Oversikt over gjennomførte og planlagte overganger med budsjett fra savet ditt',
     zoom6: 'Forstørr: Overgangsoversikt',
@@ -93,6 +90,12 @@
     r3p2: 'Gå gjennom stallkvalitet, potensial, aldersprofil, kontraktsituasjon, homegrown-status og posisjonsstyrke før du tar viktige beslutninger.',
     r3alt: 'Stallanalyse med aldersfordeling, styrke per enhet og kontraktsutløp',
     zoom3: 'Forstørr: Analyser klubben din',
+
+    r7h: 'Manager- og klubbprofil',
+    r7p1: 'Følg din egen utvikling som manager over tid. GafferBoard lagrer et utgangspunkt for trener- og mentalferdighetene dine fra FM27-savet, slik at du kan se hvordan du utvikler deg sesong for sesong.',
+    r7p2: 'Få oversikt over klubbøkonomi og sentralt støtteapparat på ett sted, bytt mellom aktive managere i flerspiller-saver, og angi egen managerfilosofi og egenskaper for å tilpasse AI-sportsdirektøren til spillestilen din.',
+    r7alt: 'Manager- og klubbprofil med trenerferdigheter, utviklingssporing, klubbøkonomi, støtteapparat og managerfilosofi',
+    zoom7: 'Forstørr: Manager- og klubbprofil',
 
     dlH2: 'Klar til å bygge fremtidens stall?',
     dlP: 'Last ned GafferBoard i dag.',
