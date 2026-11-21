@@ -19,7 +19,7 @@
 <header class="top">
   <div class="wrap bar">
     <a class="brand" href="#top">
-      <img src="images/gb-logo.png" width="48" height="48" alt="GafferBoard logo">
+      <img src="images/gb-logo.png" width="40" height="40" alt="GafferBoard logo">
       <span class="brand-text">
         <span class="brand-name">GafferBoard</span>
         <span class="brand-sub" data-i18n="brandSub">Strategic Squad &amp; Transfer Planner for Football Manager</span>
@@ -44,9 +44,11 @@
 
   <!-- HERO: intro and main image only. No download button here. -->
   <section class="hero">
-    <div class="wrap">
-      <h1 data-i18n="h1">See Your Squad.<br>Plan Your Future.</h1>
-      <p class="lead" data-i18n="lead">Get a clear visual overview of your Football Manager squad, from first team to academy, and plan the seasons ahead before they happen.</p>
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-i18n="h1">See Your Squad.<br>Plan Your Future.</h1>
+        <p class="lead" data-i18n="lead">Get a clear visual overview of your Football Manager squad, from first team to academy, and plan the seasons ahead before they happen.</p>
+      </div>
       <figure class="frame hero-img">
         <img src="images/hero.png" data-i18n-alt="heroAlt" alt="GafferBoard: youth team, first team and shortlist connected by transfers" fetchpriority="high">
       </figure>
@@ -63,7 +65,7 @@
         </article>
         <article class="card">
           <h3 data-i18n="c2h">Plan Smarter Transfers</h3>
-          <p data-i18n="c2p">Keep, loan, sell, replace and buy, with the budget for every window.</p>
+          <p data-i18n="c2p">Keep, loan, sell and buy or replace, with the budget for every window.</p>
         </article>
         <article class="card">
           <h3 data-i18n="c3h">Build For The Future</h3>
@@ -77,23 +79,45 @@
     </div>
   </section>
 
+  <!-- ABOUT: matches the About window shown in settings.png -->
+  <section id="about">
+    <div class="wrap">
+      <div class="row">
+        <div class="text">
+          <h2 data-i18n="aboutH">About GafferBoard</h2>
+          <p data-i18n="aboutP">GafferBoard gives you complete control of your first-team and youth squads. Build first- and second-choice depth charts, promote talents as they develop, and plan years ahead with sales, replacements from your shortlist or academy, and transfer window budgets.</p>
+          <ul>
+            <li data-i18n="aboutL1">Reads FM27 savegames and .fmf shortlists, read-only</li>
+            <li data-i18n="aboutL2">Three-season planner across first team, U21, U18 and loans</li>
+            <li data-i18n="aboutL3">Transfer budgets, contract warnings and HGN/HGC registration rules</li>
+            <li data-i18n="aboutL4">Sporting Director analysis, plus an optional AI report</li>
+          </ul>
+          <p class="small" data-i18n="aboutNote">No ads. Easy setup. No login required.</p>
+        </div>
+        <figure class="frame">
+          <button class="zoom" type="button" data-i18n-aria="zoomA" aria-label="Enlarge: About GafferBoard"><img src="images/settings.png" loading="lazy" data-i18n-alt="aboutAlt" alt="The About window in GafferBoard, with the key features listed"></button>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <section id="how">
     <div class="wrap">
       <h2 data-i18n="howH2">How GafferBoard Works</h2>
-      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, in six steps.</p>
+      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, in five steps.</p>
 
-      <div class="row">
+      <div class="row flip">
         <div class="text">
           <h3 data-i18n="r1h">Import Your Club</h3>
           <p data-i18n="r1p1">Start from your own game. Load your FM27 savegame and shortlists, or open a plan you saved earlier.</p>
           <p data-i18n="r1p2">GafferBoard only reads your save. It never changes it.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom1" aria-label="Enlarge: Import your club"><img src="images/settings.png" loading="lazy" data-i18n-alt="r1alt" alt="The Load Data settings window where you choose your FM27 save, shortlists or a saved plan"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom1" aria-label="Enlarge: Import your club"><img src="images/load_data.png" loading="lazy" data-i18n-alt="r1alt" alt="The Load Data window where you choose your FM27 save, shortlists or a saved plan"></button>
         </figure>
       </div>
 
-      <div class="row flip">
+      <div class="row">
         <div class="text">
           <h3 data-i18n="r2h">Understand Your Squad</h3>
           <p data-i18n="r2p">Don’t waste time clicking between multiple Football Manager screens. GafferBoard builds a visual depth chart of your whole squad and helps you answer questions like:</p>
@@ -104,12 +128,13 @@
             <li data-i18n="r2l4">What happens if an important player leaves?</li>
           </ul>
         </div>
+        <!-- Put your new screenshot at images/understand.png. Until it exists, qa-pitch.png is shown. -->
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom2" aria-label="Enlarge: Understand your squad"><img src="images/qa-pitch.png" loading="lazy" data-i18n-alt="r2alt" alt="A formation on a pitch with first, second and third choice players for each position"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom2" aria-label="Enlarge: Understand your squad"><img src="images/understand.png" onerror="this.onerror=null;this.src='images/qa-pitch.png'" loading="lazy" data-i18n-alt="r2alt" alt="A formation on a pitch with first, second and third choice players for each position"></button>
         </figure>
       </div>
 
-      <div class="row">
+      <div class="row flip">
         <div class="text">
           <h3 data-i18n="r3h">Analyse Your Club</h3>
           <p data-i18n="r3p1">Understand where your squad is strong and where future problems may be developing.</p>
@@ -120,7 +145,7 @@
         </figure>
       </div>
 
-      <div class="row flip">
+      <div class="row">
         <div class="text">
           <h3 data-i18n="r4h">Plan Transfers</h3>
           <p data-i18n="r4p1">Build your transfer strategy before the window opens. Organise players into:</p>
@@ -128,8 +153,7 @@
             <li data-i18n="tKeep">Keep</li>
             <li data-i18n="tLoan">Loan</li>
             <li data-i18n="tSell">Sell</li>
-            <li data-i18n="tBuy">Buy</li>
-            <li data-i18n="tReplace">Replace</li>
+            <li data-i18n="tBuyRep">Buy / Replace</li>
           </ul>
           <p data-i18n="r4p2">Then create a long-term roadmap for how your squad should evolve.</p>
         </div>
@@ -138,25 +162,15 @@
         </figure>
       </div>
 
-      <div class="row">
-        <div class="text">
-          <h3 data-i18n="r5h">Build Future Squads</h3>
-          <p data-i18n="r5p1">Think beyond the next season.</p>
-          <p data-i18n="r5p2">Plan squad development several years ahead and create a clear path from academy player to first-team regular.</p>
-        </div>
-        <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom5" aria-label="Enlarge: Build future squads"><img src="images/qa-final.png" loading="lazy" data-i18n-alt="r5alt" alt="GafferBoard planning view for the seasons ahead"></button>
-        </figure>
-      </div>
-
+      <!-- "Build Future Squads" is merged into this step. -->
       <div class="row flip">
         <div class="text">
-          <h3 data-i18n="r6h">Plan Successors</h3>
-          <p data-i18n="r6p1">See at a glance who is staying, who is under review and who is leaving, with contract years next to every name.</p>
-          <p data-i18n="r6p2">Know who steps up before a contract runs out or a player is sold.</p>
+          <h3 data-i18n="r5h">Plan Successors</h3>
+          <p data-i18n="r5p1">See at a glance who is staying, who is under review and who is leaving, with contract years next to every name.</p>
+          <p data-i18n="r5p2">Plan several years ahead and build a clear path from academy player to first-team regular, so you know who steps up before a contract runs out or a player is sold.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom6" aria-label="Enlarge: Plan successors"><img src="images/qa-keep.png" loading="lazy" data-i18n-alt="r6alt" alt="Squad list with keep, consider and sell markers and contract years"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom5" aria-label="Enlarge: Plan successors"><img src="images/qa-keep.png" loading="lazy" data-i18n-alt="r5alt" alt="Squad list with keep, consider and sell markers and contract years"></button>
         </figure>
       </div>
     </div>
@@ -174,57 +188,48 @@
     </div>
   </section>
 
+  <!-- FAQ and Support side by side -->
   <section id="faq">
-    <div class="wrap narrow">
-      <h2 data-i18n="faqH2">Questions</h2>
-      <details>
-        <summary data-i18n="q1">Is GafferBoard free?</summary>
-        <p data-i18n="a1">Yes. It is completely free, with no registration, no advertisements and no subscription.</p>
-      </details>
-      <details>
-        <summary data-i18n="q2">Does it modify my savegame?</summary>
-        <p data-i18n="a2">No. GafferBoard only reads your savegame. Your own notes and plans are stored separately on your computer.</p>
-      </details>
-      <details>
-        <summary data-i18n="q3">Can I use it only for squad depth planning?</summary>
-        <p data-i18n="a3">Yes. The lineup page works on its own. The transfer and analysis pages are there when you want them.</p>
-      </details>
-      <details>
-        <summary data-i18n="q4">Do I need the AI features?</summary>
-        <p data-i18n="a4">No. The AI report is optional. You can use Google Gemini with your own key, or a local Ollama model that stays on your PC.</p>
-      </details>
-      <details>
-        <summary data-i18n="q5">What data does the program collect?</summary>
-        <p data-i18n="a5">Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information.</p>
-      </details>
-      <details>
-        <summary data-i18n="q6">Is it official?</summary>
-        <p data-i18n="a6">No. GafferBoard is an unofficial fan-made tool and is not connected to Sports Interactive or SEGA.</p>
-      </details>
-    </div>
-  </section>
+    <div class="wrap duo">
+      <div>
+        <h2 data-i18n="faqH2">Questions</h2>
+        <details>
+          <summary data-i18n="q1">Is GafferBoard free?</summary>
+          <p data-i18n="a1">Yes. It is completely free, with no registration, no advertisements and no subscription.</p>
+        </details>
+        <details>
+          <summary data-i18n="q2">Does it modify my savegame?</summary>
+          <p data-i18n="a2">No. GafferBoard only reads your savegame. Your own notes and plans are stored separately on your computer.</p>
+        </details>
+        <details>
+          <summary data-i18n="q3">Can I use it only for squad depth planning?</summary>
+          <p data-i18n="a3">Yes. The lineup page works on its own. The transfer and analysis pages are there when you want them.</p>
+        </details>
+        <details>
+          <summary data-i18n="q4">Do I need the AI features?</summary>
+          <p data-i18n="a4">No. The AI report is optional. You can use Google Gemini with your own key, or a local Ollama model that stays on your PC.</p>
+        </details>
+        <details>
+          <summary data-i18n="q5">What data does the program collect?</summary>
+          <p data-i18n="a5">Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information.</p>
+        </details>
+        <details>
+          <summary data-i18n="q6">Is it official?</summary>
+          <p data-i18n="a6">No. GafferBoard is an unofficial fan-made tool and is not connected to Sports Interactive or SEGA.</p>
+        </details>
+      </div>
 
-  <section id="support">
-    <div class="wrap">
-      <div class="panel narrow">
-        <h2 data-i18n="supH2">Support GafferBoard</h2>
-        <p data-i18n="supP1">GafferBoard is developed by a Football Manager player in spare time, and it is completely free to use.</p>
-        <p data-i18n="supP2">If it helps you manage your saves, consider supporting future development. It’s never expected, and always appreciated.</p>
-        <div class="actions">
-          <a class="btn" href="https://ko-fi.com/jrmp77" rel="noopener" data-i18n="supKofi">Support on Ko-fi</a>
-          <a class="btn purple" href="https://www.paypal.com/donate/?business=DQJETX6U6KA5J&amp;no_recurring=0&amp;item_name=Thank+you+so+much+for+your+support%21&amp;currency_code=NOK" rel="noopener" data-i18n="supPaypal">Donate with PayPal</a>
+      <div id="support">
+        <div class="panel">
+          <h2 data-i18n="supH2">Support GafferBoard</h2>
+          <p data-i18n="supP1">GafferBoard is developed by a Football Manager player in spare time, and it is completely free to use.</p>
+          <p data-i18n="supP2">If it helps you manage your saves, consider supporting future development. It’s never expected, and always appreciated.</p>
+          <div class="actions">
+            <a class="btn" href="https://ko-fi.com/jrmp77" rel="noopener" data-i18n="supKofi">Support on Ko-fi</a>
+            <a class="btn purple" href="https://www.paypal.com/donate/?business=DQJETX6U6KA5J&amp;no_recurring=0&amp;item_name=Thank+you+so+much+for+your+support%21&amp;currency_code=NOK" rel="noopener" data-i18n="supPaypal">Donate with PayPal</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="privacy">
-    <div class="wrap narrow">
-      <h2 data-i18n="prH2">Privacy and cookies</h2>
-      <p data-i18n="prP1">This website uses Google Analytics to count visits and see which pages are read. It only runs if you accept. If you decline, no analytics cookies are set and no data is sent to Google.</p>
-      <p data-i18n="prP2">If you accept, Google Analytics sets cookies and collects anonymous statistics such as pages viewed, device type, browser, country and how you found the site. IP addresses are anonymised. I don’t use the data for advertising and I don’t sell it.</p>
-      <p data-i18n="prP3">Your choice is saved in your browser. You can change it at any time with “Cookie settings” in the footer. Google acts as data processor for the analytics.</p>
-      <p data-i18n="prP4">Ko-fi and PayPal are separate services with their own privacy policies.</p>
     </div>
   </section>
 
@@ -232,12 +237,15 @@
 
 <footer>
   <div class="wrap">
-    <p data-i18n="copy">© 2026 GafferBoard · Created by JRMP</p>
-    <p data-i18n="disclaimer">Unofficial fan-made tool. Not affiliated with, endorsed by, or connected to Sports Interactive or SEGA.</p>
-    <p class="foot-links">
-      <a href="#privacy" data-i18n="footPrivacy">Privacy and cookies</a>
+    <p class="copy" data-i18n="copy">© 2026 GafferBoard · Created by JRMP</p>
+    <p class="disc" data-i18n="disclaimer">Unofficial fan-made tool. Not affiliated with, endorsed by, or connected to Sports Interactive or SEGA.</p>
+    <div id="privacy" class="privacy">
+      <h2 data-i18n="prH2">Privacy and cookies</h2>
+      <p data-i18n="prP1">This website uses Google Analytics to count visits and see which pages are read. It only runs if you accept. If you decline, no analytics cookies are set and no data is sent to Google.</p>
+      <p data-i18n="prP2">If you accept, Google Analytics sets cookies and collects anonymous statistics such as pages viewed, device type, browser, country and how you found the site. IP addresses are anonymised. I don’t use the data for advertising and I don’t sell it.</p>
+      <p data-i18n="prP3">Your choice is saved in your browser. You can change it at any time with “Cookie settings” below. Google acts as data processor for the analytics. Ko-fi and PayPal are separate services with their own privacy policies.</p>
       <button type="button" id="cookieSettings" data-i18n="footCookies">Cookie settings</button>
-    </p>
+    </div>
   </div>
 </footer>
 
