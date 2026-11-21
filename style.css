@@ -94,8 +94,11 @@ h3 { font-family: var(--display); font-weight: 600; font-size: 1.4rem; line-heig
 .btn:hover { background: #62ec8c; }
 .btn.purple { background: var(--purple); color: #fff; }
 .btn.purple:hover { background: #b45cff; }
+.btn.paypal { background: #0070ba; color: #fff; font-weight: 700; }
+.btn.paypal:hover { background: #005ea6; }
 .btn.big { font-size: 1.1rem; padding: 0.8rem 1.8rem; margin-top: 0.9rem; }
 .actions { display: flex; gap: 0.7rem; flex-wrap: wrap; margin-top: 0.9rem; }
+.actions.centre { justify-content: center; }
 
 /* screenshot rows */
 .row { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 2rem; align-items: center; margin-top: 3rem; }
@@ -203,8 +206,9 @@ footer .copy { font-size: 0.85rem; }
 .consent p { margin: 0; max-width: 40rem; font-size: 0.95rem; }
 .consent-btns { display: flex; gap: 0.7rem; }
 .consent .btn { border: 1px solid var(--green); cursor: pointer; font: inherit; font-weight: 600; padding: 0.55rem 1.3rem; }
-.btn.outline { background: transparent; color: var(--text); border-color: var(--muted); }
+.btn.outline { background: transparent; color: var(--text); border: 1px solid var(--muted); }
 .btn.outline:hover { background: #1c2236; }
+.divider { border: 0; border-top: 1px solid var(--line); margin: 1.15rem 0; }
 
 /* grouped step with two screenshots */
 .group { margin-top: 3rem; }
