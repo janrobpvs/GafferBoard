@@ -3,16 +3,152 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GafferBoard – Strategic Squad &amp; Transfer Planner for Football Manager</title>
-<meta name="description" content="See your Football Manager squad at a glance and plan your future. GafferBoard is a free, unofficial squad and transfer planner. No registration, no advertisements.">
-<meta property="og:title" content="GafferBoard – See Your Squad. Plan Your Future.">
-<meta property="og:description" content="A free squad and transfer planner for Football Manager. No registration. No advertisements.">
+<title>GafferBoard – Free FM27 Squad &amp; Transfer Planner (Football Manager 27)</title>
+<meta name="description" content="Free FM27 squad planner and transfer tool for Football Manager 27. Reads your save directly (read-only) for depth charts, transfer budgets and AI Sporting Director insights.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://janrobpvs.github.io/GafferBoard/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://janrobpvs.github.io/GafferBoard/">
+<meta property="og:site_name" content="GafferBoard">
+<meta property="og:title" content="GafferBoard – Free FM27 Squad &amp; Transfer Planner">
+<meta property="og:description" content="A free FM27 companion app that reads your save directly. Map squad depth from first team to academy, plan transfers with your actual budgets, and get AI Sporting Director insights.">
 <meta property="og:image" content="https://janrobpvs.github.io/GafferBoard/images/hero.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GafferBoard – Free FM27 Squad &amp; Transfer Planner">
+<meta name="twitter:description" content="Free Football Manager 27 squad planner. Reads your FM27 save directly (read-only) for depth charts, budgets and AI Sporting Director insights.">
+<meta name="twitter:image" content="https://janrobpvs.github.io/GafferBoard/images/hero.png">
 <link rel="icon" type="image/png" href="images/gb-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "GafferBoard",
+      "alternateName": "GafferBoard FM27 Squad Planner",
+      "description": "Free FM27 squad and transfer planner for Football Manager 27. Reads your save directly (read-only) to map squad depth, plan transfers with actual budgets, and run AI Sporting Director analysis.",
+      "url": "https://janrobpvs.github.io/GafferBoard/",
+      "image": "https://janrobpvs.github.io/GafferBoard/images/hero.png",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Windows",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "JRMP"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which Football Manager versions and platforms are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GafferBoard is built for Football Manager 27 (FM27) on Windows PC. It reads FM27 .fm save files and .fmf shortlists directly. Earlier Football Manager versions are not supported."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does GafferBoard modify my save?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. GafferBoard is 100% read-only and never modifies your FM27 save file. Your own notes, depth charts and transfer plans are stored separately as local .json files on your computer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I import my squad and shortlists?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the Load Data window in Settings and point GafferBoard to your FM27 savegame folder and shortlists folder. No manual HTML exports or spreadsheets are required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it support multi-manager saves?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. If your save has more than one active manager, you can switch between them directly from the Manager and Club Profile view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it only for squad depth planning?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The lineup overview works on its own across up to three tactics. The transfer planning, Sporting Director and analysis views are there whenever you want them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it include U21, U18 squads and loaned-out players?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. GafferBoard covers your First Team, U21, U18 and loaned-out players across three seasons, making it easy to track youth prospects and promote academy players."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do transfer budgets and HGN/HGC registration rules work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Club finances and transfer budgets are read directly from your FM27 save, and GafferBoard tracks contract expiries as well as homegrown (HGN/HGC) squad registration rules window by window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need the AI features?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The built-in Live Sporting Director analysis and replacement matching work locally without any AI setup. The written Deep AI report is optional and supports Google Gemini with your own API key or a local Ollama model on your PC."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between Live Sporting Director and Deep AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Live Sporting Director runs automatically inside the app to flag contract warnings, missing replacements, unit ratings and ranked shortlist targets. Deep AI uses an LLM (Gemini or local Ollama) to generate a full written squad report tailored to your manager philosophy and traits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GafferBoard free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. It is completely free, with no registration, no advertisements and no subscription."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does the app collect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GafferBoard official?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. GafferBoard is an unofficial fan-made tool and is not affiliated with, endorsed by, or connected to Sports Interactive or SEGA."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -22,7 +158,7 @@
       <img src="images/gb-logo.png" width="40" height="40" alt="GafferBoard logo">
       <span class="brand-text">
         <span class="brand-name">GafferBoard</span>
-        <span class="brand-sub" data-i18n="brandSub">Strategic Squad &amp; Transfer Planner for Football Manager</span>
+        <span class="brand-sub" data-i18n="brandSub">Strategic Squad &amp; Transfer Planner for Football Manager 27</span>
       </span>
     </a>
     <nav id="mainNav" aria-label="Main">
@@ -46,19 +182,19 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1 data-i18n="h1">See Your Squad.<br>Plan Your Future.</h1>
+        <h1 data-i18n="h1">Manage Your Squad.<br>Plan Your Future.</h1>
         <p class="tagline" data-i18n="tagline">The only FM squad planner you need!</p>
-        <p class="lead" data-i18n="lead">Get a clear visual overview of your Football Manager squad, from first team to academy, and plan the seasons ahead before they happen.</p>
+        <p class="lead" data-i18n="lead">A free FM27 companion app that reads your save directly. Map squad depth from first team to academy, plan transfers with your actual budgets, and get AI Sporting Director insights.</p>
       </div>
       <figure class="frame hero-img">
-        <img src="images/hero.png" data-i18n-alt="heroAlt" alt="GafferBoard: youth team, first team and shortlist connected by transfers" fetchpriority="high">
+        <img src="images/hero.png" data-i18n-alt="heroAlt" alt="GafferBoard FM27 squad planner: youth team, first team and shortlist connected by transfers" fetchpriority="high">
       </figure>
     </div>
   </section>
 
   <section id="features">
     <div class="wrap">
-      <h2 data-i18n="featuresH2">Built For Every Football Manager 27 Save</h2>
+      <h2 data-i18n="featuresH2">Built for Every Football Manager 27 Save</h2>
       <div class="cards">
         <article class="card">
           <h3 data-i18n="c1h">Understand Your Squad</h3>
@@ -66,10 +202,10 @@
         </article>
         <article class="card">
           <h3 data-i18n="c2h">Plan Smarter Transfers</h3>
-          <p data-i18n="c2p">Keep, loan, sell and buy or replace, with the budget for every window.</p>
+          <p data-i18n="c2p">Keep, loan, sell and buy, with your actual budget for every window.</p>
         </article>
         <article class="card">
-          <h3 data-i18n="c3h">Build For The Future</h3>
+          <h3 data-i18n="c3h">Build for the Future</h3>
           <p data-i18n="c3p">Track youth prospects and plan squad development several seasons ahead.</p>
         </article>
       </div>
@@ -86,9 +222,9 @@
       <div class="row">
         <div class="text">
           <h2 data-i18n="aboutH">About GafferBoard</h2>
-          <p data-i18n="aboutP">GafferBoard gives you complete control of your first-team and youth squads. Build first-, second- and third-choice depth charts, promote talents as they develop, and plan years ahead with sales, replacements from your shortlist or academy, and transfer window budgets.</p>
+          <p data-i18n="aboutP">GafferBoard is an FM27 squad planner that gives you complete control of your first-team and youth squads. Build first-, second- and third-choice depth charts, promote talents as they develop, and plan years ahead with sales, replacements from your shortlist or academy, and transfer window budgets.</p>
           <ul>
-            <li data-i18n="aboutL1">Reads FM27 savegames and .fmf shortlists, read-only</li>
+            <li data-i18n="aboutL1">Reads FM27 saves and .fmf shortlists directly (read-only)</li>
             <li data-i18n="aboutL2">Three-season planner across first team, U21, U18 and loans</li>
             <li data-i18n="aboutL3">Transfer budgets, contract warnings and HGN/HGC registration rules</li>
           </ul>
@@ -108,8 +244,8 @@
       <div class="row flip">
         <div class="text">
           <h3 data-i18n="r1h">Import Your Club</h3>
-          <p data-i18n="r1p1">Start from your own game. Load your FM27 savegame and shortlists, or open a plan you saved earlier.</p>
-          <p data-i18n="r1p2">GafferBoard only reads your save. It never changes it.</p>
+          <p data-i18n="r1p1">Start from your own save. Load your FM27 save file and shortlists directly, or open a plan you saved earlier.</p>
+          <p data-i18n="r1p2">GafferBoard only reads your save. It never modifies it.</p>
         </div>
         <figure class="frame">
           <button class="zoom" type="button" data-i18n-aria="zoom1" aria-label="Enlarge: Import your club"><img src="images/settings.png" loading="lazy" data-i18n-alt="r1alt" alt="The Load Data window where you choose your FM27 save, shortlists or a saved plan"></button>
@@ -122,35 +258,36 @@
           <div class="text">
             <h3 data-i18n="u0h">Understand Your Squad</h3>
             <h4 class="sub" data-i18n="uAh">See every position at a glance</h4>
-            <p data-i18n="uA1">View your First Team, U21 and U18 squads across all three tactics, with up to three players per position. Show age, star rating, value or contract next to each name, and click the coloured dot to mark a player as keep, consider or sell.</p>
+            <p data-i18n="uA1">View your First Team, U21 and U18 squads across all three tactics, with up to three players per position. Show age, star rating, value or contract next to each name, and click the coloured dot to mark a player as keep, loan out, consider (for sale) or sell.</p>
             <p data-i18n="uA2">It helps you answer questions like:</p>
             <ul>
               <li data-i18n="r2l1">Do I have enough cover on the left side?</li>
               <li data-i18n="r2l3">Which youth player is closest to the first team?</li>
-              <li data-i18n="r2l4">What happens if an important player leaves?</li>
-              <li data-i18n="r2l5">How should I manage my lineup across tactics, 1st–3rd choices and the next three seasons?</li>
+              <li data-i18n="r2l4">What are my 1st and 2nd lineups?</li>
+              <li data-i18n="r2l5">How will my lineup evolve over the next three seasons?</li>
             </ul>
           </div>
           <figure class="frame">
-            <button class="zoom" type="button" data-i18n-aria="zoomU1" aria-label="Enlarge: Lineup with player data"><img src="images/Lineup_data.png" loading="lazy" data-i18n-alt="uAalt" alt="The lineup view with your formation and player data on the pitch"></button>
+            <button class="zoom" type="button" data-i18n-aria="zoomU1" aria-label="Enlarge: Lineup with player data"><img src="images/Lineup_data.png" loading="lazy" data-i18n-alt="uAalt" alt="FM27 squad depth chart and lineup view with your formation and player data on the pitch"></button>
           </figure>
         </div>
 
         <div class="row flip">
           <div class="text">
             <h4 class="sub" data-i18n="uBh">Plan transfers and successors</h4>
-            <p data-i18n="uB1">Switch to the squad building view and see every position as a row: who is in the squad now, who is out on loan and who you plan to sell, and in which transfer window. Organise players into:</p>
+            <p data-i18n="uB1">Switch to the squad building view and see every position as a row: who is in the squad now, who is out on loan, who you plan to sell and in which transfer window. Organise players into:</p>
             <ul class="tags">
               <li data-i18n="tKeep">Keep</li>
               <li data-i18n="tLoan">Loan</li>
+              <li data-i18n="tConsider">Consider</li>
               <li data-i18n="tSell">Sell</li>
               <li data-i18n="tBuyRep">Buy / Replace</li>
             </ul>
-            <p data-i18n="uB2">Choose who replaces a player who leaves, from your shortlist or your academy, and see contract years next to every name, so you know who steps up before a contract runs out. Then build a long-term roadmap for how your squad should evolve, from promoting academy players to first-team regulars.</p>
+            <p data-i18n="uB2">Choose who replaces a departing player from your shortlist or academy, and see contract years next to every name so you know who steps up before a contract runs out. Then build a long-term roadmap for how your squad should evolve, from promoting academy players to first-team regulars.</p>
           </div>
           <!-- File name has an ampersand: images/Squad&transfers.png. It is written as %26 in the address. -->
           <figure class="frame">
-            <button class="zoom" type="button" data-i18n-aria="zoomU2" aria-label="Enlarge: Squad and transfers"><img src="images/Squad%26transfers.png" loading="lazy" data-i18n-alt="uBalt" alt="The squad building view with players per position and planned transfers"></button>
+            <button class="zoom" type="button" data-i18n-aria="zoomU2" aria-label="Enlarge: Squad and transfers"><img src="images/Squad%26transfers.png" loading="lazy" data-i18n-alt="uBalt" alt="FM27 squad building view with players per position, shortlists and planned transfers"></button>
           </figure>
         </div>
       </div>
@@ -161,11 +298,11 @@
           <div class="text">
             <h3 data-i18n="sd0h">AI &amp; Sporting Director</h3>
             <h4 class="sub" data-i18n="sdAh">Live squad advice and building priorities</h4>
-            <p data-i18n="sdA1">Get an objective second opinion before you commit to a transfer window. The Sporting Director evaluates every unit in your squad and automatically flags risks — from expiring contracts and outgoing players missing a replacement, to squad strengths and overall age profile.</p>
+            <p data-i18n="sdA1">Get an objective second opinion before you commit to a transfer window. The Sporting Director evaluates every unit in your squad and automatically flags risks, from expiring contracts and outgoing players missing a replacement to squad strengths and overall age profile.</p>
             <p data-i18n="sdA2">Need a full written breakdown? Run an optional Deep AI report using your own Google Gemini key or a local Ollama model directly on your PC.</p>
           </div>
           <figure class="frame">
-            <button class="zoom" type="button" data-i18n-aria="zoomSD1" aria-label="Enlarge: Sporting Director squad advice"><img src="images/SportingDirectorAdvise.png" loading="lazy" data-i18n-alt="sdAalt" alt="AI Sporting Director live analysis showing unit ratings, contract warnings, sales plan gaps and shortlist suggestions"></button>
+            <button class="zoom" type="button" data-i18n-aria="zoomSD1" aria-label="Enlarge: Sporting Director squad advice"><img src="images/SportingDirectorAdvise.png" loading="lazy" data-i18n-alt="sdAalt" alt="AI Sporting Director live analysis for FM27 showing unit ratings, contract warnings, sales plan gaps and shortlist suggestions"></button>
           </figure>
         </div>
 
@@ -173,7 +310,7 @@
           <div class="text">
             <h4 class="sub" data-i18n="sdBh">Smart recommendations for signings and replacements</h4>
             <p data-i18n="sdB1">When a player is marked for sale or nearing the end of a contract, the Sporting Director ranks the best replacements from your shortlist with a clear match score and one-click target picking.</p>
-            <p data-i18n="sdB2">Use automatic scoring or weight your own recruitment priorities — including current ability, potential and age range, price and wages, expiring contracts, homegrown status, form, injury risk and preferred foot.</p>
+            <p data-i18n="sdB2">Use automatic scoring or weight your own recruitment priorities, including your assistant manager’s current ability and potential ratings, age range, price and wages, expiring contracts, homegrown status, form, injury risk and preferred foot.</p>
           </div>
           <!-- File name has an ampersand: images/SportingDirector&transfers.png. It is written as %26 in the address. -->
           <figure class="frame">
@@ -185,11 +322,11 @@
       <div class="row">
         <div class="text">
           <h3 data-i18n="r6h">Transfer Overview</h3>
-          <p data-i18n="r6p1">See an overview of the transfers that have been made and the ones that are planned, transfer window by transfer window.</p>
-          <p data-i18n="r6p2">The budget is integrated from your own savegame, so every plan is checked against your real finances.</p>
+          <p data-i18n="r6p1">Track completed and planned transfers, transfer window by transfer window.</p>
+          <p data-i18n="r6p2">Your budget is pulled directly from your save, so every plan is checked against your real club finances.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom6" aria-label="Enlarge: Transfer overview"><img src="images/Transferoverview.png" loading="lazy" data-i18n-alt="r6alt" alt="Overview of completed and planned transfers with the budget from your savegame"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom6" aria-label="Enlarge: Transfer overview"><img src="images/Transferoverview.png" loading="lazy" data-i18n-alt="r6alt" alt="FM27 transfer planner overview of completed and planned transfers with the budget from your save"></button>
         </figure>
       </div>
 
@@ -200,7 +337,7 @@
           <p data-i18n="r3p2">Review squad quality, potential, age profile, contract situations, homegrown status and position strength before you make important decisions.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom3" aria-label="Enlarge: Analyse your club"><img src="images/analysis.png" loading="lazy" data-i18n-alt="r3alt" alt="Squad analysis with age distribution, strength by unit and contract expiries"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom3" aria-label="Enlarge: Analyse your club"><img src="images/analysis.png" loading="lazy" data-i18n-alt="r3alt" alt="FM27 squad analysis with age distribution, strength by unit and contract expiries"></button>
         </figure>
       </div>
 
@@ -229,41 +366,89 @@
     </div>
   </section>
 
-  <!-- FAQ and Support side by side -->
+  <!-- FAQ (categorised accordions) and Support side by side -->
   <section id="faq">
     <div class="wrap duo">
       <div>
         <h2 data-i18n="faqH2">Questions</h2>
-        <details>
-          <summary data-i18n="q1">Is GafferBoard free?</summary>
-          <p data-i18n="a1">Yes. It is completely free, with no registration, no advertisements and no subscription.</p>
+
+        <details class="faq-cat" name="faq-group">
+          <summary><span data-i18n="faqCat1">Getting Started &amp; Compatibility</span><span class="faq-count">4</span></summary>
+          <div class="faq-cat-body">
+            <details>
+              <summary data-i18n="qCompat">Which FM versions and platforms are supported?</summary>
+              <p data-i18n="aCompat">GafferBoard is built for Football Manager 27 (FM27) on Windows PC. It reads FM27 .fm save files and .fmf shortlists directly. Earlier FM versions are not supported.</p>
+            </details>
+            <details>
+              <summary data-i18n="q2">Does it modify my save?</summary>
+              <p data-i18n="a2">No. GafferBoard is 100% read-only and never modifies your save. Your own notes, depth charts and transfer plans are stored separately as local .json files on your computer.</p>
+            </details>
+            <details>
+              <summary data-i18n="qImport">How do I import my squad and shortlists?</summary>
+              <p data-i18n="aImport">Open Load Data in Settings and select your FM27 savegame folder and shortlists folder. No manual HTML exports or spreadsheets are needed.</p>
+            </details>
+            <details>
+              <summary data-i18n="qMulti">Does it support multi-manager saves?</summary>
+              <p data-i18n="aMulti">Yes. If your save includes more than one active manager, you can switch between them directly from the Manager &amp; Club Profile view.</p>
+            </details>
+          </div>
         </details>
-        <details>
-          <summary data-i18n="q2">Does it modify my savegame?</summary>
-          <p data-i18n="a2">No. GafferBoard only reads your savegame. Your own notes and plans are stored separately on your computer.</p>
+
+        <details class="faq-cat" name="faq-group">
+          <summary><span data-i18n="faqCat2">Features &amp; Squad Planning</span><span class="faq-count">3</span></summary>
+          <div class="faq-cat-body">
+            <details>
+              <summary data-i18n="q3">Can I use it only for squad depth planning?</summary>
+              <p data-i18n="a3">Yes. The lineup page works on its own across up to three tactics. The transfer, Sporting Director and analysis pages are there whenever you want them.</p>
+            </details>
+            <details>
+              <summary data-i18n="qYouth">Does it include U21, U18 squads and loaned-out players?</summary>
+              <p data-i18n="aYouth">Yes. GafferBoard covers your First Team, U21, U18 and loaned-out players across three seasons, making it easy to track prospects and promote academy players.</p>
+            </details>
+            <details>
+              <summary data-i18n="qBudget">How do transfer budgets and HGN/HGC registration rules work?</summary>
+              <p data-i18n="aBudget">Club finances and transfer budgets are read directly from your FM27 save, while contract warnings and homegrown (HGN/HGC) squad registration rules update as you plan each window.</p>
+            </details>
+          </div>
         </details>
-        <details>
-          <summary data-i18n="q3">Can I use it only for squad depth planning?</summary>
-          <p data-i18n="a3">Yes. The lineup page works on its own. The transfer and analysis pages are there when you want them.</p>
+
+        <details class="faq-cat" name="faq-group">
+          <summary><span data-i18n="faqCat3">AI &amp; Sporting Director</span><span class="faq-count">2</span></summary>
+          <div class="faq-cat-body">
+            <details>
+              <summary data-i18n="q4">Do I need the AI features?</summary>
+              <p data-i18n="a4">No. The built-in Live Sporting Director analysis and replacement matching work locally without any AI setup. The written Deep AI report is optional and supports Google Gemini with your own key, or a local Ollama model that stays on your PC.</p>
+            </details>
+            <details>
+              <summary data-i18n="qAiDiff">What is the difference between Live Sporting Director and Deep AI?</summary>
+              <p data-i18n="aAiDiff">Live Sporting Director runs automatically inside the app to flag contract warnings, missing replacements, unit ratings and ranked shortlist matches. Deep AI uses an LLM (Gemini or local Ollama) to write a full squad report tailored to your manager philosophy and traits.</p>
+            </details>
+          </div>
         </details>
-        <details>
-          <summary data-i18n="q4">Do I need the AI features?</summary>
-          <p data-i18n="a4">No. The AI report is optional. You can use Google Gemini with your own key, or a local Ollama model that stays on your PC.</p>
-        </details>
-        <details>
-          <summary data-i18n="q5">What data does the program collect?</summary>
-          <p data-i18n="a5">Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information.</p>
-        </details>
-        <details>
-          <summary data-i18n="q6">Is it official?</summary>
-          <p data-i18n="a6">No. GafferBoard is an unofficial fan-made tool and is not connected to Sports Interactive or SEGA.</p>
+
+        <details class="faq-cat" name="faq-group">
+          <summary><span data-i18n="faqCat4">Price, Privacy &amp; About</span><span class="faq-count">3</span></summary>
+          <div class="faq-cat-body">
+            <details>
+              <summary data-i18n="q1">Is GafferBoard free?</summary>
+              <p data-i18n="a1">Yes. It is completely free, with no registration, no advertisements and no subscription.</p>
+            </details>
+            <details>
+              <summary data-i18n="q5">What data does the app collect?</summary>
+              <p data-i18n="a5">Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information.</p>
+            </details>
+            <details>
+              <summary data-i18n="q6">Is it official?</summary>
+              <p data-i18n="a6">No. GafferBoard is an unofficial fan-made tool and is not connected to Sports Interactive or SEGA.</p>
+            </details>
+          </div>
         </details>
       </div>
 
       <div id="support">
         <div class="panel">
           <h2 data-i18n="supH2">Support GafferBoard</h2>
-          <p data-i18n="supP1">GafferBoard is developed by a Football Manager player in spare time, and it is completely free to use.</p>
+          <p data-i18n="supP1">GafferBoard is developed by a Football Manager enthusiast in his spare time, and it is completely free to use.</p>
           <p data-i18n="supP2">If it helps you manage your saves, consider supporting future development. It’s never expected, and always appreciated.</p>
           <div class="actions">
             <a class="btn" href="https://ko-fi.com/jrmp77" rel="noopener" data-i18n="supKofi">Support on Ko-fi</a>
@@ -291,7 +476,7 @@
 </footer>
 
 <div id="consent" class="consent" role="region" aria-label="Cookies" hidden>
-  <p><span data-i18n="cbText">We use cookies for anonymous visitor statistics (Google Analytics). Do you accept?</span> <a href="#privacy" data-i18n="cbMore">Read more</a></p>
+  <p><span data-i18n="cbText">This site uses cookies for anonymous visitor statistics (Google Analytics). Do you accept?</span> <a href="#privacy" data-i18n="cbMore">Read more</a></p>
   <div class="consent-btns">
     <button type="button" class="btn" id="consentAccept" data-i18n="cbAccept">Accept</button>
     <button type="button" class="btn outline" id="consentDecline" data-i18n="cbDecline">Decline</button>
