@@ -38,41 +38,44 @@
     aboutL2: 'Planlegger for tre sesonger på tvers av A-lag, U21, U18 og utlån',
     aboutL3: 'Overgangsbudsjett, kontraktsvarsler og HGN/HGC-registreringsregler',
     aboutL4: 'Sportsdirektør-analyse, pluss en valgfri AI-rapport',
-    aboutNote: 'Ingen reklame. Enkelt oppsett. Ingen innlogging.',
     aboutAlt: 'Om-vinduet i GafferBoard, med de viktigste funksjonene oppført',
     zoomA: 'Forstørr: Om GafferBoard',
 
     howH2: 'Slik fungerer GafferBoard',
-    howIntro: 'Fra savet ditt til en plan du kan følge, i fem steg.',
+    howIntro: 'Fra savet ditt til en plan du kan følge, i fire steg.',
+    u0h: 'Forstå stallen din',
+    u0: 'Ikke kast bort tid på å klikke mellom flere skjermbilder i Football Manager. GafferBoard samler hele stallen og planene dine på ett sted.',
+    uAh: 'Se hver posisjon med ett blikk',
+    uA1: 'Lagoppstillingen viser formasjonen på en bane, med opptil tre spillere per posisjon. Vis alder, stjerner, verdi eller kontrakt ved siden av navnet, og klikk på den fargede kula for å markere en spiller som behold, vurder eller selg.',
+    uA2: 'Den hjelper deg å svare på spørsmål som:',
+    uAalt: 'Lagoppstillingen med formasjonen din og spillerdata på banen',
+    zoomU1: 'Forstørr: Lagoppstilling med spillerdata',
+    uBh: 'Planlegg overganger og etterfølgere',
+    uB1: 'Bytt til stallbyggingen og se hver posisjon som en rad: hvem som er i stallen nå, hvem som er utlånt og hvem du planlegger å selge, og i hvilket overgangsvindu. Sorter spillere i:',
+    uB2: 'Velg hvem som erstatter en spiller som forlater klubben, fra shortlisten eller akademiet, og se kontraktsår ved siden av hvert navn, så du vet hvem som rykker opp før en kontrakt går ut. Lag deretter en langsiktig plan for hvordan stallen skal utvikle seg, fra akademispiller til fast A-lagsspiller.',
+    uBalt: 'Stallbyggingen med spillere per posisjon og planlagte overganger',
+    zoomU2: 'Forstørr: Stall og overganger',
+    r6h: 'Overgangsoversikt',
+    r6p1: 'Se en oversikt over overgangene som har vært og de som er planlagt, vindu for vindu.',
+    r6p2: 'Budsjettet er integrert fra ditt eget savegame, så hver plan sjekkes mot de faktiske pengene dine.',
+    r6alt: 'Oversikt over gjennomførte og planlagte overganger med budsjett fra savet ditt',
+    zoom6: 'Forstørr: Overgangsoversikt',
     r1h: 'Importer klubben din',
     r1p1: 'Start med ditt eget spill. Last inn FM27-savet og shortlistene dine, eller åpne en plan du har lagret tidligere.',
     r1p2: 'GafferBoard leser bare savet ditt. Det endrer det aldri.',
     r1alt: 'Vinduet «Hent data», der du velger FM27-save, shortlister eller en lagret plan',
     zoom1: 'Forstørr: Importer klubben din',
     r2h: 'Forstå stallen din',
-    r2p: 'Ikke kast bort tid på å klikke mellom flere skjermbilder i Football Manager. GafferBoard lager et visuelt dybdekart over hele stallen og hjelper deg å svare på spørsmål som:',
     r2l1: 'Har jeg nok dekning på venstresiden?',
     r2l2: 'Hvem er reservespissen min?',
     r2l3: 'Hvilken ungdomsspiller er nærmest A-laget?',
     r2l4: 'Hva skjer hvis en viktig spiller forlater klubben?',
-    r2alt: 'En formasjon på banen med første-, andre- og tredjevalg for hver posisjon',
-    zoom2: 'Forstørr: Forstå stallen din',
     r3h: 'Analyser klubben din',
     r3p1: 'Se hvor stallen er sterk, og hvor problemer kan være på vei.',
     r3p2: 'Gå gjennom stallkvalitet, potensial, aldersprofil, kontraktsituasjon, homegrown-status og posisjonsstyrke før du tar viktige beslutninger.',
     r3alt: 'Stallanalyse med aldersfordeling, styrke per enhet og kontraktsutløp',
     zoom3: 'Forstørr: Analyser klubben din',
-    r4h: 'Planlegg overganger',
-    r4p1: 'Lag overgangsstrategien før vinduet åpner. Sorter spillere i:',
     tKeep: 'Behold', tLoan: 'Lån ut', tSell: 'Selg', tBuyRep: 'Kjøp / Erstatt',
-    r4p2: 'Lag deretter en langsiktig plan for hvordan stallen skal utvikle seg.',
-    r4alt: 'Overgangsplanlegging med salg, kjøp og balanse for hvert overgangsvindu',
-    zoom4: 'Forstørr: Planlegg overganger',
-    r5h: 'Planlegg etterfølgere',
-    r5p1: 'Se med et blikk hvem som blir, hvem som vurderes og hvem som forlater klubben, med kontraktsår ved siden av hvert navn.',
-    r5p2: 'Planlegg flere år frem og lag en tydelig vei fra akademispiller til fast A-lagsspiller, så du vet hvem som rykker opp før en kontrakt går ut eller en spiller selges.',
-    r5alt: 'Spillerliste med markeringer for behold, vurder og selg, samt kontraktsår',
-    zoom5: 'Forstørr: Planlegg etterfølgere',
 
     dlH2: 'Klar til å bygge fremtidens stall?',
     dlP: 'Last ned GafferBoard i dag.',
@@ -212,6 +215,48 @@
   menuBtn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
   nav.addEventListener('click', function (event) { if (event.target.tagName === 'A') setMenu(false); });
   window.addEventListener('keydown', function (event) { if (event.key === 'Escape') setMenu(false); });
+
+
+  // ---------- Menu highlight follows the scroll position ----------
+  // Top of the page = Features. Bottom of the page = Support.
+  var spyIds = ['features', 'how', 'download', 'faq'];
+  var navLinks = nav.querySelectorAll('a[href^="#"]');
+  var forcedId = null;
+
+  function setActive(id) {
+    navLinks.forEach(function (a) {
+      var on = a.getAttribute('href') === '#' + id;
+      a.classList.toggle('active', on);
+      if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+    });
+  }
+
+  function updateSpy() {
+    if (forcedId) { setActive(forcedId); return; }
+    var current = 'features';
+    var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom) {
+      current = 'support';
+    } else {
+      var line = window.innerHeight * 0.35;
+      spyIds.forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.getBoundingClientRect().top <= line) current = id;
+      });
+    }
+    setActive(current);
+  }
+
+  // A click on a menu link keeps that link highlighted until the visitor scrolls by hand.
+  navLinks.forEach(function (a) {
+    a.addEventListener('click', function () { forcedId = a.getAttribute('href').slice(1); setActive(forcedId); });
+  });
+  ['wheel', 'touchmove', 'keydown'].forEach(function (type) {
+    window.addEventListener(type, function () { forcedId = null; }, { passive: true });
+  });
+  window.addEventListener('scroll', updateSpy, { passive: true });
+  window.addEventListener('resize', updateSpy);
+  updateSpy();
 
   // ---------- Screenshot lightbox ----------
   var box = document.getElementById('lightbox');

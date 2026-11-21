@@ -79,7 +79,7 @@
     </div>
   </section>
 
-  <!-- ABOUT: matches the About window shown in settings.png -->
+  <!-- ABOUT: matches the About window shown in about.png -->
   <section id="about">
     <div class="wrap">
       <div class="row">
@@ -92,10 +92,9 @@
             <li data-i18n="aboutL3">Transfer budgets, contract warnings and HGN/HGC registration rules</li>
             <li data-i18n="aboutL4">Sporting Director analysis, plus an optional AI report</li>
           </ul>
-          <p class="small" data-i18n="aboutNote">No ads. Easy setup. No login required.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoomA" aria-label="Enlarge: About GafferBoard"><img src="images/settings.png" loading="lazy" data-i18n-alt="aboutAlt" alt="The About window in GafferBoard, with the key features listed"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoomA" aria-label="Enlarge: About GafferBoard"><img src="images/about.png" loading="lazy" data-i18n-alt="aboutAlt" alt="The About window in GafferBoard, with the key features listed"></button>
         </figure>
       </div>
     </div>
@@ -104,7 +103,7 @@
   <section id="how">
     <div class="wrap">
       <h2 data-i18n="howH2">How GafferBoard Works</h2>
-      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, in five steps.</p>
+      <p class="intro" data-i18n="howIntro">From your save to a plan you can follow, in four steps.</p>
 
       <div class="row flip">
         <div class="text">
@@ -113,28 +112,52 @@
           <p data-i18n="r1p2">GafferBoard only reads your save. It never changes it.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom1" aria-label="Enlarge: Import your club"><img src="images/load_data.png" loading="lazy" data-i18n-alt="r1alt" alt="The Load Data window where you choose your FM27 save, shortlists or a saved plan"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom1" aria-label="Enlarge: Import your club"><img src="images/settings.png" loading="lazy" data-i18n-alt="r1alt" alt="The Load Data window where you choose your FM27 save, shortlists or a saved plan"></button>
         </figure>
+      </div>
+
+      <!-- Understand Your Squad: two screenshots. Transfers and successors are part of this step. -->
+      <div class="group">
+        <h3 data-i18n="u0h">Understand Your Squad</h3>
+        <p data-i18n="u0">Don’t waste time clicking between multiple Football Manager screens. GafferBoard puts your whole squad, and your plans for it, in one place.</p>
+
+        <div class="row">
+          <div class="text">
+            <h4 class="sub" data-i18n="uAh">See every position at a glance</h4>
+            <p data-i18n="uA1">The lineup view shows your formation on a pitch with up to three players for every position. Show age, star rating, value or contract next to each name, and click the coloured dot to mark a player as keep, consider or sell.</p>
+            <p data-i18n="uA2">It helps you answer questions like:</p>
+            <ul>
+              <li data-i18n="r2l1">Do I have enough cover on the left side?</li>
+              <li data-i18n="r2l2">Who is my backup striker?</li>
+              <li data-i18n="r2l3">Which youth player is closest to the first team?</li>
+              <li data-i18n="r2l4">What happens if an important player leaves?</li>
+            </ul>
+          </div>
+          <figure class="frame">
+            <button class="zoom" type="button" data-i18n-aria="zoomU1" aria-label="Enlarge: Lineup with player data"><img src="images/Lineup_data.png" loading="lazy" data-i18n-alt="uAalt" alt="The lineup view with your formation and player data on the pitch"></button>
+          </figure>
+        </div>
+
+        <div class="row flip">
+          <div class="text">
+            <h4 class="sub" data-i18n="uBh">Plan transfers and successors</h4>
+            <p data-i18n="uB1">Switch to the squad building view and see every position as a row: who is in the squad now, who is out on loan and who you plan to sell, and in which transfer window. Organise players into:</p>
+            <ul class="tags">
+              <li data-i18n="tKeep">Keep</li>
+              <li data-i18n="tLoan">Loan</li>
+              <li data-i18n="tSell">Sell</li>
+              <li data-i18n="tBuyRep">Buy / Replace</li>
+            </ul>
+            <p data-i18n="uB2">Choose who replaces a player who leaves, from your shortlist or your academy, and see contract years next to every name, so you know who steps up before a contract runs out. Then build a long-term roadmap for how your squad should evolve, from academy player to first-team regular.</p>
+          </div>
+          <!-- File name has an ampersand: images/squad&transfers.png. It is written as %26 in the address. -->
+          <figure class="frame">
+            <button class="zoom" type="button" data-i18n-aria="zoomU2" aria-label="Enlarge: Squad and transfers"><img src="images/squad%26transfers.png" loading="lazy" data-i18n-alt="uBalt" alt="The squad building view with players per position and planned transfers"></button>
+          </figure>
+        </div>
       </div>
 
       <div class="row">
-        <div class="text">
-          <h3 data-i18n="r2h">Understand Your Squad</h3>
-          <p data-i18n="r2p">Don’t waste time clicking between multiple Football Manager screens. GafferBoard builds a visual depth chart of your whole squad and helps you answer questions like:</p>
-          <ul>
-            <li data-i18n="r2l1">Do I have enough cover on the left side?</li>
-            <li data-i18n="r2l2">Who is my backup striker?</li>
-            <li data-i18n="r2l3">Which youth player is closest to the first team?</li>
-            <li data-i18n="r2l4">What happens if an important player leaves?</li>
-          </ul>
-        </div>
-        <!-- Put your new screenshot at images/understand.png. Until it exists, qa-pitch.png is shown. -->
-        <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom2" aria-label="Enlarge: Understand your squad"><img src="images/understand.png" onerror="this.onerror=null;this.src='images/qa-pitch.png'" loading="lazy" data-i18n-alt="r2alt" alt="A formation on a pitch with first, second and third choice players for each position"></button>
-        </figure>
-      </div>
-
-      <div class="row flip">
         <div class="text">
           <h3 data-i18n="r3h">Analyse Your Club</h3>
           <p data-i18n="r3p1">Understand where your squad is strong and where future problems may be developing.</p>
@@ -145,32 +168,14 @@
         </figure>
       </div>
 
-      <div class="row">
-        <div class="text">
-          <h3 data-i18n="r4h">Plan Transfers</h3>
-          <p data-i18n="r4p1">Build your transfer strategy before the window opens. Organise players into:</p>
-          <ul class="tags">
-            <li data-i18n="tKeep">Keep</li>
-            <li data-i18n="tLoan">Loan</li>
-            <li data-i18n="tSell">Sell</li>
-            <li data-i18n="tBuyRep">Buy / Replace</li>
-          </ul>
-          <p data-i18n="r4p2">Then create a long-term roadmap for how your squad should evolve.</p>
-        </div>
-        <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom4" aria-label="Enlarge: Plan transfers"><img src="images/qa-transfer.png" loading="lazy" data-i18n-alt="r4alt" alt="Transfer planning with sales, signings and a balance for each transfer window"></button>
-        </figure>
-      </div>
-
-      <!-- "Build Future Squads" is merged into this step. -->
       <div class="row flip">
         <div class="text">
-          <h3 data-i18n="r5h">Plan Successors</h3>
-          <p data-i18n="r5p1">See at a glance who is staying, who is under review and who is leaving, with contract years next to every name.</p>
-          <p data-i18n="r5p2">Plan several years ahead and build a clear path from academy player to first-team regular, so you know who steps up before a contract runs out or a player is sold.</p>
+          <h3 data-i18n="r6h">Transfer Overview</h3>
+          <p data-i18n="r6p1">See an overview of the transfers that have been made and the ones that are planned, window by window.</p>
+          <p data-i18n="r6p2">The budget is integrated from your own savegame, so every plan is checked against your real finances.</p>
         </div>
         <figure class="frame">
-          <button class="zoom" type="button" data-i18n-aria="zoom5" aria-label="Enlarge: Plan successors"><img src="images/qa-keep.png" loading="lazy" data-i18n-alt="r5alt" alt="Squad list with keep, consider and sell markers and contract years"></button>
+          <button class="zoom" type="button" data-i18n-aria="zoom6" aria-label="Enlarge: Transfer overview"><img src="images/transferoverview.png" loading="lazy" data-i18n-alt="r6alt" alt="Overview of completed and planned transfers with the budget from your savegame"></button>
         </figure>
       </div>
     </div>

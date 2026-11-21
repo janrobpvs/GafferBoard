@@ -178,3 +178,24 @@ footer .copy { font-size: 0.85rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* V4 additions */
+#features h2 { text-align: center; }
+.cta { text-align: center; }
+
+/* menu highlight follows the scroll position */
+nav { gap: 0.4rem; }
+nav a { padding: 0.3rem 0.75rem; border-radius: 6px; }
+nav a.active { background: var(--green); color: var(--green-ink); font-weight: 600; }
+nav a.active:hover { color: var(--green-ink); }
+
+/* grouped step with two screenshots */
+.group { margin-top: 2rem; }
+.group > p { color: var(--muted); max-width: 44rem; }
+.group .row { margin-top: 1.25rem; }
+.sub { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.2; margin: 0 0 0.5rem; color: var(--green); }
+
+@media (max-width: 860px) {
+  nav { gap: 0; }
+  nav a { padding: 0.6rem 0.75rem; }
+}
