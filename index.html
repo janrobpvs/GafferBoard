@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>GafferBoard | Football Manager Squad Planning</title>
+<title>GafferBoard | See Your Squad. Plan Your Future.</title>
 
 <meta name="description"
-content="See your squad. Plan your future. GafferBoard helps Football Manager players understand squad depth, plan transfers and build stronger teams.">
+content="Visual squad planning, transfer strategy and squad analysis for Football Manager.">
+
+<link rel="stylesheet" href="style.css">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-00KLSR494S"></script>
+
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -17,209 +22,94 @@ gtag('js', new Date());
 gtag('config', 'G-00KLSR494S');
 </script>
 
-<style>
-
-:root{
---bg:#08120d;
---card:#122017;
---green:#39ff5a;
---text:#ffffff;
---muted:#b9c4bc;
-}
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:var(--bg);
-color:var(--text);
-line-height:1.7;
-}
-
-.container{
-width:min(1100px,90%);
-margin:auto;
-}
-
-header{
-background:#08120d;
-border-bottom:1px solid rgba(255,255,255,.1);
-position:sticky;
-top:0;
-z-index:10;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.lang{
-display:flex;
-gap:10px;
-}
-
-.lang button{
-padding:6px 12px;
-cursor:pointer;
-border:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-.hero{
-padding:80px 0;
-text-align:center;
-}
-
-.hero h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:700px;
-margin:auto;
-color:var(--muted);
-}
-
-.btn{
-display:inline-block;
-padding:14px 25px;
-margin:10px;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-.btn-primary{
-background:var(--green);
-color:black;
-}
-
-.btn-secondary{
-border:1px solid var(--green);
-color:white;
-}
-
-section{
-padding:70px 0;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:var(--card);
-padding:25px;
-border-radius:12px;
-}
-
-.card h3{
-color:var(--green);
-margin-bottom:10px;
-}
-
-.screenshot{
-margin-top:20px;
-width:100%;
-border-radius:12px;
-}
-
-footer{
-padding:50px 0;
-text-align:center;
-color:var(--muted);
-border-top:1px solid rgba(255,255,255,.1);
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:2rem;
-}
-
-nav{
-flex-direction:column;
-gap:15px;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
 <header>
-<div class="container">
+
+<div class="container nav">
+
+<div class="logo">
+GafferBoard
+</div>
+
 <nav>
 
-<div>
-<strong>GafferBoard</strong>
-</div>
-
-<div>
 <a href="#features" data-en="Features" data-no="Funksjoner">Features</a>
-<a href="#download" data-en="Download" data-no="Last ned">Download</a>
-<a href="#support" data-en="Support" data-no="Støtt">Support</a>
-</div>
 
-<div class="lang">
-<button onclick="setLanguage('en')">EN</button>
-<button onclick="setLanguage('no')">NO</button>
-</div>
+<a href="#screenshots" data-en="Screenshots" data-no="Skjermbilder">Screenshots</a>
+
+<a href="#download" data-en="Download" data-no="Last ned">Download</a>
+
+<a href="#support" data-en="Support" data-no="Støtt">Support</a>
 
 </nav>
+
+<div class="lang-switch">
+
+<button onclick="setLanguage('en')">EN</button>
+
+<button onclick="setLanguage('no')">NO</button>
+
 </div>
+
+</div>
+
 </header>
 
 <section class="hero">
 
-<div class="container">
+<div class="container hero-grid">
+
+<div>
 
 <h1
+
 data-en="See Your Squad. Plan Your Future."
 data-no="Få oversikt over stallen. Planlegg fremtiden.">
+
 See Your Squad. Plan Your Future.
+
 </h1>
 
 <p
-data-en="A simple visual planning tool for Football Manager. Understand squad depth, build future lineups, analyse your club and plan smarter transfers."
-data-no="Et enkelt visuelt planleggingsverktøy for Football Manager. Få oversikt over stalldybde, bygg fremtidige lagoppstillinger, analyser klubben og planlegg smartere overganger.">
+
+data-en="A simple visual planning tool for Football Manager."
+
+data-no="Et enkelt visuelt planleggingsverktøy for Football Manager.">
+
 A simple visual planning tool for Football Manager.
+
 </p>
 
-<br>
+<a class="btn primary"
 
-<a class="btn btn-primary"
-href="https://github.com/janrobpvs/GafferBoard/releases/latest"
+href="https://github.com/janrobpvs/GafferBoard/releases/latest">
+
+<span
+
 data-en="Download Free"
+
 data-no="Last ned gratis">
+
 Download Free
+
+</span>
+
 </a>
 
-<a class="btn btn-secondary"
-href="#features"
-data-en="Learn More"
-data-no="Les mer">
-Learn More
-</a>
+</div>
+
+<div>
+
+<img id="heroShot"
+
+src="images/qa-pitch.png"
+
+alt="Screenshot">
+
+</div>
 
 </div>
 
@@ -230,56 +120,114 @@ Learn More
 <div class="container">
 
 <h2
-data-en="What Can GafferBoard Do?"
-data-no="Hva kan GafferBoard gjøre?">
-What Can GafferBoard Do?
-</h2>
 
-<br>
+data-en="Built for Every Football Manager Save"
+
+data-no="Laget for alle Football Manager-lagringer">
+
+Built for Every Football Manager Save
+
+</h2>
 
 <div class="cards">
 
 <div class="card">
+
 <h3
+
 data-en="Understand Your Squad"
+
 data-no="Forstå stallen">
+
 Understand Your Squad
+
 </h3>
 
 <p
-data-en="See squad depth, backup options, future weaknesses and registration requirements at a glance."
-data-no="Se stalldybde, reserver, fremtidige svakheter og registreringskrav på ett sted.">
-See squad depth.
+
+data-en="Visual squad depth and position coverage."
+
+data-no="Visuell stalldybde og posisjonsdekning.">
+
+Visual squad depth.
+
 </p>
+
 </div>
 
 <div class="card">
+
 <h3
+
 data-en="Plan Transfers"
+
 data-no="Planlegg overganger">
+
 Plan Transfers
+
 </h3>
 
 <p
-data-en="Keep, loan, sell, replace and buy with a clear transfer strategy."
-data-no="Behold, lån ut, selg, erstatt og kjøp med en tydelig strategi.">
+
+data-en="Build smarter transfer strategies."
+
+data-no="Bygg smartere overgangsstrategier.">
+
 Transfer strategy.
+
 </p>
+
 </div>
 
 <div class="card">
+
 <h3
-data-en="Build For The Future"
-data-no="Bygg for fremtiden">
-Build For The Future
+
+data-en="Analyse Your Club"
+
+data-no="Analyser klubben">
+
+Analyse Your Club
+
 </h3>
 
 <p
-data-en="Track youth prospects, successors and squad evolution over multiple seasons."
-data-no="Følg talenter, arvtakere og stallutvikling over flere sesonger.">
-Future squad planning.
+
+data-en="Discover strengths and weaknesses."
+
+data-no="Oppdag styrker og svakheter.">
+
+Discover strengths and weaknesses.
+
 </p>
+
 </div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="screenshots">
+
+<div class="container">
+
+<h2>Screenshots</h2>
+
+<div class="gallery">
+
+<img src="images/qa-pitch.png">
+
+<img src="images/qa-transfer.png">
+
+<img src="images/qa-final.png">
+
+<img src="images/qa-keep.png">
+
+<img src="images/analysis.png">
+
+<img src="images/settings.jpg">
 
 </div>
 
@@ -289,29 +237,24 @@ Future squad planning.
 
 <section id="download">
 
-<div class="container">
+<div class="container center">
 
 <h2
+
 data-en="Download GafferBoard"
+
 data-no="Last ned GafferBoard">
+
 Download GafferBoard
+
 </h2>
 
-<br>
+<a class="btn primary"
 
-<p
-data-en="Free for Windows. No subscription required."
-data-no="Gratis for Windows. Ingen abonnement nødvendig.">
-Free for Windows.
-</p>
+href="https://github.com/janrobpvs/GafferBoard/releases/latest">
 
-<br>
+Latest Release
 
-<a class="btn btn-primary"
-href="https://github.com/janrobpvs/GafferBoard/releases/latest"
-data-en="Download Latest Release"
-data-no="Last ned siste versjon">
-Download Latest Release
 </a>
 
 </div>
@@ -320,34 +263,32 @@ Download Latest Release
 
 <section id="support">
 
-<div class="container">
+<div class="container center">
 
 <h2
+
 data-en="Support Development"
+
 data-no="Støtt utviklingen">
+
 Support Development
+
 </h2>
 
-<br>
+<a class="btn primary"
 
-<p
-data-en="GafferBoard is completely free. If it helps your Football Manager saves, consider supporting future development."
-data-no="GafferBoard er helt gratis. Hvis programmet hjelper deg, kan du støtte videre utvikling.">
-Support development.
-</p>
+href="https://ko-fi.com/jrmp77">
 
-<br>
-
-<a class="btn btn-primary"
-href="https://ko-fi.com/jrmp77"
-target="_blank">
 Ko-Fi
+
 </a>
 
-<a class="btn btn-secondary"
-href="https://www.paypal.com/donate/?business=DQJETX6U6KA5J&no_recurring=0&item_name=Thank+you+so+much+for+your+support%21&currency_code=NOK"
-target="_blank">
+<a class="btn secondary"
+
+href="https://www.paypal.com/donate/?business=DQJETX6U6KA5J&no_recurring=0&item_name=Thank+you+so+much+for+your+support%21&currency_code=NOK">
+
 PayPal
+
 </a>
 
 </div>
@@ -356,57 +297,11 @@ PayPal
 
 <footer>
 
-<p>GafferBoard</p>
-
-<p
-data-en="Created by JRMP."
-data-no="Laget av JRMP.">
-Created by JRMP.
-</p>
-
-<p>
-Football Manager companion tool.
-</p>
+Created by JRMP
 
 </footer>
 
-<script>
-
-function setLanguage(lang){
-
-localStorage.setItem('lang',lang);
-
-document.querySelectorAll('[data-' + lang + ']')
-.forEach(el=>{
-el.textContent = el.getAttribute('data-' + lang);
-});
-
-document.documentElement.lang = lang;
-}
-
-const savedLang = localStorage.getItem('lang');
-
-if(savedLang){
-
-setLanguage(savedLang);
-
-}else{
-
-const browserLang = navigator.language || navigator.userLanguage;
-
-if(browserLang.startsWith('no')){
-
-setLanguage('no');
-
-}else{
-
-setLanguage('en');
-
-}
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
