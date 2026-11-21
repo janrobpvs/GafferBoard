@@ -114,7 +114,8 @@ h3 { font-family: var(--display); font-weight: 600; font-size: 1.4rem; line-heig
 
 /* panels */
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.4rem 1.4rem; }
-#download .panel { max-width: 38rem; border-color: rgba(59,224,113,0.45); box-shadow: 0 0 40px rgba(59,224,113,0.1); }
+.download-panel { max-width: 38rem; border-color: rgba(59,224,113,0.45); box-shadow: 0 0 40px rgba(59,224,113,0.1); }
+.cta-panel { margin-top: 2rem; }
 
 /* faq and support side by side */
 .duo { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.25rem; align-items: start; }

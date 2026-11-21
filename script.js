@@ -26,15 +26,13 @@
     menu: 'Meny',
     h1: 'Styr stallen din.<br>Planlegg fremtiden.',
     tagline: 'Den eneste FM-stallplanleggeren du trenger!',
-    lead: 'En gratis FM27-app som leser savet ditt direkte. Kartlegg stalldybden fra A-lag til akademi, planlegg overganger med dine faktiske budsjetter og få råd fra AI-sportsdirektøren.',
+    lead: 'En gratis FM27-app som leser savet ditt direkte og fungerer som en strategisk stall- og overgangsplanlegger. Kartlegg stalldybden fra A-lag til akademi, planlegg overganger med dine faktiske budsjetter og få råd fra AI-sportsdirektøren.',
     heroAlt: 'GafferBoard FM27-stallplanlegger: ungdomslag, A-lag og shortlist knyttet sammen av overganger',
 
     featuresH2: 'Laget for alle Football Manager 27-saver',
     c1h: 'Forstå stallen din', c1p: 'Se dybde, reserver og posisjonsdekning på én bane.',
     c2h: 'Planlegg smartere overganger', c2p: 'Behold, lån ut, selg og kjøp, med ditt faktiske budsjett for hvert vindu.',
     c3h: 'Bygg for fremtiden', c3p: 'Følg ungdomstalenter og planlegg stallutviklingen flere sesonger frem.',
-    dlFree: 'Last ned gratis',
-    proof1: 'Ingen registrering. Ingen reklame. 100 % gratis.',
 
     aboutH: 'Om GafferBoard',
     aboutP: 'GafferBoard er en FM27-stallplanlegger som gir deg full kontroll over A-laget og ungdomslagene. Sett opp første-, andre- og tredjevalg for hver posisjon, flytt talenter oppover etter hvert som de utvikler seg, og planlegg flere år frem med salg, erstattere fra shortlist eller akademi, og overgangsbudsjett.',
