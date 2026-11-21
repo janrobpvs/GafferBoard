@@ -3,10 +3,13 @@
   'use strict';
 
   // ============================================================
-  // 1. DOWNLOAD LINK. Paste your real link between the quotes.
-  //    Example: 'https://github.com/janrobpvs/GafferBoard/releases/latest'
+  // 1. LINKS. Paste your real links between the quotes.
+  //    DOWNLOAD_URL example: 'https://github.com/janrobpvs/GafferBoard/releases/latest'
+  //    VIRUSTOTAL_URL example: 'https://www.virustotal.com/gui/file/...'
   // ============================================================
   var DOWNLOAD_URL = 'PASTE_YOUR_DOWNLOAD_LINK_HERE';
+  var VIRUSTOTAL_URL = 'PASTE_YOUR_VIRUSTOTAL_LINK_HERE';
+  var ISSUES_URL = 'https://github.com/janrobpvs/GafferBoard/issues';
 
   // ============================================================
   // 2. GOOGLE ANALYTICS. Loads only after the visitor accepts cookies.
@@ -112,6 +115,9 @@
     aImport: 'Åpne «Load Data» i innstillingene og velg mappen for FM27-saver og shortlister. Du trenger ingen manuell HTML-eksport eller regneark.',
     qMulti: 'Støtter appen saver med flere managere?',
     aMulti: 'Ja. Hvis savet ditt har flere aktive managere, kan du bytte mellom dem direkte i visningen for manager- og klubbprofil.',
+    qSafe: 'Hvorfor viser Windows SmartScreen en advarsel?',
+    aSafe: 'Fordi GafferBoard er en gratis, uoffisiell hobbyapp uten et betalt Microsoft-sertifikat, kan Windows Defender SmartScreen vise advarselen «Ukjent utgiver» første gang du starter appen. Klikk «Mer informasjon» og deretter «Kjør likevel». Hver utgivelse publiseres på GitHub med en SHA-256-sjekksum slik at du kan verifisere filen.',
+    vtLink: 'Se VirusTotal-skann',
 
     faqCat2: 'Funksjoner og stallplanlegging',
     q3: 'Kan jeg bruke det bare til å planlegge stalldybde?',
@@ -131,11 +137,13 @@
     q1: 'Er GafferBoard gratis?',
     a1: 'Ja. Det er helt gratis, uten registrering, reklame eller abonnement.',
     q5: 'Hvilke data samler appen inn?',
-    a5: 'Bare anonyme bruksdata, for eksempel at appen startes, at du bytter side eller laster inn et save. Den sender aldri spillerdata, filstier eller personopplysninger.',
+    a5: 'Ingen. GafferBoard kjører 100 % lokalt på din PC uten sporing eller telemetri. Ingen data forlater datamaskinen din med mindre du selv velger å kjøre en valgfri Deep AI-rapport via Google Gemini.',
     q6: 'Er det offisielt?',
     a6: 'Nei. GafferBoard er et uoffisielt fanverktøy og har ingen tilknytning til Sports Interactive eller SEGA.',
 
-    supH2: 'Støtt GafferBoard',
+    supH2: 'Support og tilbakemeldinger',
+    supBugP: 'Funnet en feil, et problem med et save eller har du et forslag? Meld det direkte på GitHub Issues.',
+    supBugBtn: 'Meld feil / gi tilbakemelding',
     supP1: 'GafferBoard er laget av en Football Manager-entusiast på fritiden, og er helt gratis å bruke.',
     supP2: 'Hvis det hjelper deg med savene dine, kan du vurdere å støtte videre utvikling. Det forventes aldri, men settes alltid pris på.',
     supKofi: 'Støtt på Ko-fi',
@@ -242,6 +250,21 @@
       });
     }
   });
+
+  if (/^https?:\/\//i.test(VIRUSTOTAL_URL)) {
+    document.querySelectorAll('[data-virustotal]').forEach(function (link) {
+      link.href = VIRUSTOTAL_URL;
+    });
+    document.querySelectorAll('[data-virustotal-wrap]').forEach(function (wrap) {
+      wrap.hidden = false;
+    });
+  }
+
+  if (/^https?:\/\//i.test(ISSUES_URL)) {
+    document.querySelectorAll('[data-issues]').forEach(function (link) {
+      link.href = ISSUES_URL;
+    });
+  }
 
   // ---------- Mobile menu ----------
   var menuBtn = document.getElementById('menuBtn');

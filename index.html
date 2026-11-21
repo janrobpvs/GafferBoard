@@ -82,6 +82,14 @@
         },
         {
           "@type": "Question",
+          "name": "Why does Windows SmartScreen show a warning when I open GafferBoard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GafferBoard is a free, unofficial hobby app without a paid Microsoft code-signing certificate, so Windows Defender SmartScreen may show an Unknown publisher warning on first launch. Click More info and then Run anyway. Every release is published on GitHub with a SHA-256 checksum and VirusTotal scan so you can verify the file."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Can I use it only for squad depth planning?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -133,7 +141,7 @@
           "name": "What data does the app collect?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information."
+            "text": "None. GafferBoard runs 100% locally on your PC with zero tracking or telemetry. No data ever leaves your computer unless you choose to run an optional Deep AI report via Google Gemini."
           }
         },
         {
@@ -373,7 +381,7 @@
         <h2 data-i18n="faqH2">Questions</h2>
 
         <details class="faq-cat" name="faq-group">
-          <summary><span data-i18n="faqCat1">Getting Started &amp; Compatibility</span><span class="faq-count">4</span></summary>
+          <summary><span data-i18n="faqCat1">Getting Started &amp; Compatibility</span><span class="faq-count">5</span></summary>
           <div class="faq-cat-body">
             <details>
               <summary data-i18n="qCompat">Which FM versions and platforms are supported?</summary>
@@ -390,6 +398,10 @@
             <details>
               <summary data-i18n="qMulti">Does it support multi-manager saves?</summary>
               <p data-i18n="aMulti">Yes. If your save includes more than one active manager, you can switch between them directly from the Manager &amp; Club Profile view.</p>
+            </details>
+            <details>
+              <summary data-i18n="qSafe">Why does Windows SmartScreen show a warning?</summary>
+              <p><span data-i18n="aSafe">Because GafferBoard is a free, unofficial hobby app without a paid Microsoft code-signing certificate, Windows Defender SmartScreen may show an “Unknown publisher” warning on first launch. Click “More info” and then “Run anyway”. Every release is published on GitHub with a SHA-256 checksum so you can verify the file.</span><span class="vt-wrap" data-virustotal-wrap hidden> <a href="#download" data-virustotal rel="noopener" data-i18n="vtLink">View VirusTotal scan</a>.</span></p>
             </details>
           </div>
         </details>
@@ -435,7 +447,7 @@
             </details>
             <details>
               <summary data-i18n="q5">What data does the app collect?</summary>
-              <p data-i18n="a5">Only anonymous usage events, such as starting the app, switching pages or loading a save. It never sends player data, file paths or personal information.</p>
+              <p data-i18n="a5">None. GafferBoard runs 100% locally on your PC with zero tracking or telemetry. No data ever leaves your computer unless you choose to run an optional Deep AI report via Google Gemini.</p>
             </details>
             <details>
               <summary data-i18n="q6">Is it official?</summary>
@@ -447,7 +459,12 @@
 
       <div id="support">
         <div class="panel">
-          <h2 data-i18n="supH2">Support GafferBoard</h2>
+          <h2 data-i18n="supH2">Support &amp; Feedback</h2>
+          <p data-i18n="supBugP">Found a bug, a savegame issue or have a feature idea? Report it directly on GitHub Issues.</p>
+          <div class="actions">
+            <a class="btn outline" href="https://github.com/janrobpvs/GafferBoard/issues" data-issues rel="noopener" data-i18n="supBugBtn">Report a Bug / Feedback</a>
+          </div>
+          <hr class="divider">
           <p data-i18n="supP1">GafferBoard is developed by a Football Manager enthusiast in his spare time, and it is completely free to use.</p>
           <p data-i18n="supP2">If it helps you manage your saves, consider supporting future development. It’s never expected, and always appreciated.</p>
           <div class="actions">
