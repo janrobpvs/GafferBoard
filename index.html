@@ -1,74 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</div>
+<title>GafferBoard | Squad Planning, Transfers & Analysis for Football Manager</title>
 
-</div>
+<meta name="description"
+      content="Visual squad planning for Football Manager. Understand squad depth, analyse your club, develop youth prospects and build smarter transfer strategies across multiple seasons.">
 
-</section>
+<meta property="og:title"
+      content="GafferBoard - Strategic Squad & Transfer Planner for Football Manager">
 
-<section id="download">
+<meta property="og:description"
+      content="See your squad. Plan your future.">
 
-<div class="container download">
+<meta property="og:image"
+      content="images/gb-logo.png">
 
-<h2>Download GafferBoard</h2>
+<meta property="og:type"
+      content="website">
 
-<p style="max-width:700px;margin:20px auto 40px;">
-Free for Windows. No subscription required. Import your save and start planning immediately.
-</p>
+<meta name="theme-color"
+      content="#39ff5a">
 
-<a class="btn btn-primary"
-href="https://github.com/janrobpvs/GafferBoard/releases/latest">
-Download Latest Release
-</a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-</div>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-</section>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-00KLSR494S"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-00KLSR494S');
+</script>
 
-<section id="support">
+<style>
 
-<div class="container download">
+:root{
+  --bg: #08120d;
+  --bg2: #0f1d15;
+  --panel: #13241b;
+  --green: #39ff5a;
+  --green2: #25d84c;
+  --white: #ffffff;
+  --muted: #b9c4bc;
+  --border: rgba(57,255,90,.20);
+  --shadow: 0 0 30px rgba(57,255,90,.15);
+}
 
-<h2>Support Development</h2>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-<p>
-GafferBoard is a free community project built by a Football Manager player for Football Manager players.
-</p>
+html{
+  scroll-behavior:smooth;
+}
 
-<div class="support-buttons">
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:'Inter',sans-serif;
+  line-height:1.7;
+}
+  
+a{
+  text-decoration:none;
+}
 
-<a class="btn btn-primary"
-href="https://ko-fi.com/jrmp77"
-target="_blank">
-Support via Ko-fi
-</a>
+.container{
+  width:min(1200px,92%);
+  margin:auto;
+}
 
-<a class="btn btn-secondary"
-href="https://www.paypal.com/donate/?business=DQJETX6U6KA5J&no_recurring=0&item_name=Thank+you+so+much+for+your+support%21&currency_code=NOK"
-target="_blank">
-Donate via PayPal
-</a>
+section{
+  padding:90px 0;
+}
 
-</div>
+h1,h2,h3{
+  line-height:1.2;
+}
 
-</div>
+h1{
+  font-size:4rem;
+}
 
-</section>
+h2{
+  font-size:2.4rem;
+  margin-bottom:20px;
+}
 
-<footer>
+h3{
+  font-size:1.4rem;
+  margin-bottom:12px;
+}
 
-<p>
-GafferBoard – Strategic Squad & Transfer Planning for Football Manager
-</p>
+p{
+  color:var(--muted);
+}
 
-<p>
-Created by JRMP.
-</p>
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:12px;
+  font-weight:700;
+  transition:.25s;
+}
 
-<p>
-Unofficial fan-made project. Not affiliated with Sports Interactive, Football Manager or SEGA.
-</p>
+.btn-primary{
+  background:var(--green);
+  color:#000;
+}
 
-</footer>
+.btn-primary:hover{
+  transform:translateY(-2px);
+}
+  }
 
-</body>
-</html>
+.card{
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:30px;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:50;
+
+  background:rgba(8,18,13,.92);
+  backdrop-filter:blur(12px);
+
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+}
+
+.logo{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  font-weight:800;
+}
+
+.logo img{
+  width:48px;
+  height:48px;
+}
+
+.nav-links{
+  display:flex;
+  gap:24px;
+}
+
+.nav-links a{
+  color:white;
+}
+
+.hero{
+  background:
+  radial-gradient(circle at center,
+  rgba(57,255,90,.12),
+  transparent 45%);
+
+  padding:120px 0 100px;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:50px;
+  align-items:center;
+}
+
+.hero h1{
+  margin-bottom:20px;
+}
+  
