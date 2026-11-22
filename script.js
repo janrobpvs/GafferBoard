@@ -25,7 +25,7 @@
     navFeatures: 'Funksjoner', navHow: 'Slik fungerer det', navDownload: 'Last ned', navFaq: 'Spørsmål', navSupport: 'Support',
     menu: 'Meny',
     h1: 'Styr stallen din.<br>Planlegg fremtiden.',
-    tagline: 'Den eneste FM-stallplanleggeren du trenger!',
+    tagline: 'Den eneste FM-stallplanleggeren du trenger?',
     lead: 'En gratis FM27-app som leser savet ditt direkte og fungerer som en strategisk stall- og overgangsplanlegger. Kartlegg stalldybden fra A-lag til akademi, planlegg overganger med dine faktiske budsjetter og få råd fra AI-sportsdirektøren.',
     heroAlt: 'GafferBoard FM27-stallplanlegger: ungdomslag, A-lag og shortlist knyttet sammen av overganger',
 
@@ -34,13 +34,6 @@
     c2h: 'Planlegg smartere overganger', c2p: 'Behold, lån ut, selg og kjøp, med ditt faktiske budsjett for hvert vindu.',
     c3h: 'Bygg for fremtiden', c3p: 'Følg ungdomstalenter og planlegg stallutviklingen flere sesonger frem.',
 
-    aboutH: 'Om GafferBoard',
-    aboutP: 'GafferBoard er en FM27-stallplanlegger som gir deg full kontroll over A-laget og ungdomslagene. Sett opp første-, andre- og tredjevalg for hver posisjon, flytt talenter oppover etter hvert som de utvikler seg, og planlegg flere år frem med salg, erstattere fra shortlist eller akademi, og overgangsbudsjett.',
-    aboutL1: 'Leser FM27-saver og .fmf-shortlister direkte (uten å endre filene)',
-    aboutL2: 'Planlegger for tre sesonger på tvers av A-lag, U21, U18 og utlån',
-    aboutL3: 'Overgangsbudsjett, kontraktsvarsler og HGN/HGC-registreringsregler',
-    aboutAlt: 'Om-vinduet i GafferBoard, med de viktigste funksjonene oppført',
-    zoomA: 'Forstørr: Om GafferBoard',
 
     howH2: 'Slik fungerer GafferBoard',
     howIntro: 'Fra savet ditt til en plan du kan følge, steg for steg.',
@@ -52,7 +45,7 @@
 
     u0h: 'Forstå stallen din',
     uAh: 'Se hver posisjon med ett blikk',
-    uA1: 'Se A-laget, U21 og U18 på tvers av alle tre taktikkene dine, med opptil tre spillere per posisjon. Vis alder, stjerner, verdi eller kontrakt ved siden av hvert navn, og klikk på den fargede prikken for å markere en spiller som behold, lån ut, vurder (salg) eller selg.',
+    uA1: 'Se A-laget, U21 og U18 på tvers av alle tre taktikkene dine og de neste tre sesongene, med opptil tre spillere per posisjon. Vis alder, stjerner, verdi eller kontrakt ved siden av hvert navn, og klikk på den fargede prikken for å markere en spiller som behold, lån ut, vurder (salg) eller selg.',
     uA2: 'Den hjelper deg å svare på spørsmål som:',
     r2l1: 'Har jeg nok dekning på venstresiden?',
     r2l3: 'Hvilken ungdomsspiller er nærmest A-laget?',
@@ -88,7 +81,7 @@
 
     r3h: 'Analyser klubben din',
     r3p1: 'Se hvor stallen er sterk, og hvor problemer kan være på vei.',
-    r3p2: 'Gå gjennom stallkvalitet, potensial, aldersprofil, kontraktsituasjon, homegrown-status og posisjonsstyrke før du tar viktige beslutninger.',
+    r3p2: 'Gå gjennom stallkvalitet, potensial, aldersprofil, kontraktsituasjon, homegrown-status (HGN/HGC-registreringsregler) og posisjonsstyrke før du tar viktige beslutninger.',
     r3alt: 'FM27-stallanalyse med aldersfordeling, styrke per lagdel og kontraktsutløp',
     zoom3: 'Forstørr: Analyser klubben din',
 
