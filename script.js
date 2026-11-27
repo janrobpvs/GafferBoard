@@ -1,4 +1,4 @@
-// GafferBoard website V2 (English + Norwegian)
+// GafferBoard website V2.1 (English + Norwegian, updated for GafferBoard v1.1)
 (function () {
   'use strict';
 
@@ -8,7 +8,7 @@
   //    VIRUSTOTAL_URL example: 'https://www.virustotal.com/gui/file/...'
   // ============================================================
   var DOWNLOAD_URL = 'https://github.com/janrobpvs/GafferBoard/releases/latest';
-  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/102835394848fe6349bd47ef72f99251069bbdad589e2a42a4d5011954786677';
+  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/c3e6bd3a34ba601799da0ca24bfc1669c21eb43127041c2da705819ffffd6ab8';
   var ISSUES_URL = 'https://github.com/janrobpvs/GafferBoard/issues';
 
   // ============================================================
@@ -34,12 +34,18 @@
     c2h: 'Planlegg smartere overganger', c2p: 'Behold, lån ut, selg og kjøp, med ditt faktiske budsjett for hvert vindu.',
     c3h: 'Bygg for fremtiden', c3p: 'Følg ungdomstalenter og planlegg stallutviklingen flere sesonger frem.',
 
+    vBadge: 'Siste versjon: v1.1 · Windows 10/11 · 5 språk',
+    wnH3: 'Nytt i v1.1',
+    wn1: '<strong>5 språk:</strong> Engelsk, norsk, tysk, fransk – og nå polsk.',
+    wn2: '<strong>1-klikks auto-oppdatering:</strong> Sjekker GitHub Releases anonymt og verifiserer SHA-256-sjekksum automatisk.',
+    wn3: '<strong>Oppgradert Shortlist:</strong> Ekte FM27-posisjonskjennskap (Natural / Accomplished), ubegrenset flernivå-sortering og markedsverdi ved stjernene.',
+    wn4: '<strong>Desktop-forbedringer og sikkerhet:</strong> Fullskjermmodus (F11), krasjsikker profillagring og forsterket lokal sikkerhet.',
 
     howH2: 'Slik fungerer GafferBoard',
     howIntro: 'Fra savet ditt til en plan du kan følge, steg for steg.',
     r1h: 'Importer klubben din',
-    r1p1: 'Start med ditt eget save. Last inn FM27-savet og shortlistene dine direkte, eller åpne en plan du har lagret tidligere.',
-    r1p2: 'GafferBoard leser bare savet ditt. Det endrer det aldri.',
+    r1p1: 'Start med ditt eget save. Last inn FM27-savet og shortlistene dine direkte, eller åpne en plan du har lagret tidligere – med adskilt manuell lagring og krasjsikker autosave.',
+    r1p2: 'GafferBoard leser bare savet ditt og endrer det aldri. Bytt fritt mellom 5 språk (engelsk, norsk, tysk, fransk og polsk) og trykk F11 når som helst for fullskjermmodus.',
     r1alt: 'Vinduet «Hent data», der du velger FM27-save, shortlister eller en lagret plan',
     zoom1: 'Forstørr: Importer klubben din',
 
@@ -56,7 +62,7 @@
 
     uBh: 'Planlegg overganger og etterfølgere',
     uB1: 'Bytt til stallbyggingen og se hver posisjon som en rad: hvem som er i stallen nå, hvem som er utlånt, hvem du planlegger å selge og i hvilket overgangsvindu. Sorter spillere i:',
-    uB2: 'Velg hvem som erstatter en spiller som forlater klubben, fra shortlisten eller akademiet, og se kontraktsår ved siden av hvert navn, så du vet hvem som rykker opp før en kontrakt går ut. Lag deretter en langsiktig plan for hvordan stallen skal utvikle seg, fra å løfte opp akademispillere til faste A-lagsspillere.',
+    uB2: 'Filtrer shortlisten på ekte FM27-posisjonskjennskap (Natural, Accomplished og nedover), sorter med ubegrenset flernivå-prioritering og se markedsverdi rett ved siden av stjernene. Velg etterfølgere fra shortlisten eller akademiet og legg en langsiktig plan sesong for sesong.',
     uBalt: 'FM27-stallbygging med spillere per posisjon, shortlister og planlagte overganger',
     zoomU2: 'Forstørr: Stall og overganger',
     tKeep: 'Behold', tLoan: 'Lån ut', tConsider: 'Vurder', tSell: 'Selg', tBuyRep: 'Kjøp / Erstatt',
@@ -64,7 +70,7 @@
     sd0h: 'AI og sportsdirektør',
     sdAh: 'Løpende stallråd og prioriteringer for stallbygging',
     sdA1: 'Få en objektiv vurdering av stallen før du binder deg til et overgangsvindu. Sportsdirektøren vurderer hver lagdel og fanger automatisk opp risikoer, fra utløpende kontrakter og spillere på vei ut uten erstatter til stallens sterkeste områder og aldersprofil.',
-    sdA2: 'Vil du ha en full skriftlig rapport? Kjør en valgfri AI-dybdeanalyse med din egen Google Gemini-nøkkel eller en lokal Ollama-modell rett på din egen PC.',
+    sdA2: 'Vil du ha en full skriftlig rapport? Kjør en valgfri AI-dybdeanalyse med din egen Google Gemini-, OpenAI- eller Anthropic Claude-nøkkel – eller en lokal Ollama-modell rett på din egen PC.',
     sdAalt: 'AI-sportsdirektørens løpende analyse for FM27 med vurdering per lagdel, kontraktsvarsler, manglende erstattere og forslag fra shortlist',
     zoomSD1: 'Forstørr: Sportsdirektør – stallråd',
     sdBh: 'Smarte råd for kjøp og erstattere',
@@ -94,12 +100,14 @@
     dlH2: 'Klar til å bygge fremtidens stall?',
     dlP: 'Last ned GafferBoard i dag.',
     proof2: 'Ingen registrering. Ingen reklame. Ingen abonnement.',
-    dlLatest: 'Last ned siste versjon',
+    dlLatest: 'Last ned siste versjon (v1.1)',
 
     faqH2: 'Spørsmål',
     faqCat1: 'Kom i gang og kompatibilitet',
     qCompat: 'Hvilke FM-versjoner og plattformer støttes?',
     aCompat: 'GafferBoard er laget for Football Manager 27 (FM27) på Windows-PC. Appen leser .fm-saver og .fmf-shortlister direkte. Tidligere FM-versjoner støttes ikke.',
+    qLangUpd: 'Hvilke språk støttes, og hvordan fungerer oppdateringer?',
+    aLangUpd: 'GafferBoard støtter 5 språk: engelsk, norsk, tysk, fransk og polsk. Fra v1.1 har appen innebygd auto-oppdatering som sjekker GitHub Releases anonymt og lar deg oppdatere med ett klikk og automatisk SHA-256-verifisering.',
     q2: 'Endrer det savet mitt?',
     a2: 'Nei. GafferBoard leser bare savet ditt uten å endre filen. Egne notater, dybdekart og overgangsplaner lagres separat som lokale .json-filer på din egen datamaskin.',
     qImport: 'Hvordan importerer jeg stall og shortlister?',
@@ -120,15 +128,15 @@
 
     faqCat3: 'AI og sportsdirektør',
     q4: 'Må jeg bruke AI-funksjonene?',
-    a4: 'Nei. Den innebygde sportsdirektøren og rangeringen av erstattere fungerer lokalt uten noe AI-oppsett. Den skriftlige Deep AI-rapporten er valgfri og støtter Google Gemini med din egen nøkkel, eller en lokal Ollama-modell som blir på din PC.',
+    a4: 'Nei. Den innebygde sportsdirektøren og rangeringen av erstattere fungerer lokalt uten noe AI-oppsett. Den skriftlige Deep AI-rapporten er valgfri og støtter Google Gemini, OpenAI eller Anthropic Claude med din egen nøkkel, eller en lokal Ollama-modell som blir på din PC.',
     qAiDiff: 'Hva er forskjellen på Live Sporting Director og Deep AI?',
-    aAiDiff: 'Live Sporting Director kjører automatisk i appen og varsler om utløpende kontrakter, manglende erstattere, styrke per lagdel og rangerte shortlist-forslag. Deep AI bruker en språkmodell (Gemini eller lokal Ollama) til å skrive en full stallrapport tilpasset din managerfilosofi og dine egenskaper.',
+    aAiDiff: 'Live Sporting Director kjører automatisk i appen og varsler om utløpende kontrakter, manglende erstattere, styrke per lagdel og rangerte shortlist-forslag. Deep AI bruker en språkmodell (Gemini, OpenAI, Claude eller lokal Ollama) til å skrive en full stallrapport tilpasset din managerfilosofi og dine egenskaper.',
 
     faqCat4: 'Pris, personvern og om appen',
     q1: 'Er GafferBoard gratis?',
     a1: 'Ja. Det er helt gratis, uten registrering, reklame eller abonnement.',
     q5: 'Hvilke data samler appen inn?',
-    a5: 'Ingen. GafferBoard kjører 100 % lokalt på din PC uten sporing eller telemetri. Ingen data forlater datamaskinen din med mindre du selv velger å kjøre en valgfri Deep AI-rapport via Google Gemini.',
+    a5: 'Ingen. GafferBoard kjører 100 % lokalt på din PC uten sporing eller telemetri. Appen gjør kun en anonym versjonssjekk mot GitHub Releases (uten person- eller savedata), og sender kun data til en AI-leverandør hvis du selv velger å kjøre en valgfri Deep AI-rapport.',
     q6: 'Er det offisielt?',
     a6: 'Nei. GafferBoard er et uoffisielt fanverktøy og har ingen tilknytning til Sports Interactive eller SEGA.',
 
@@ -233,7 +241,7 @@
   document.querySelectorAll('[data-download]').forEach(function (link) {
     if (hasRealUrl) {
       link.href = DOWNLOAD_URL;
-      link.rel = 'noopener';
+      link.rel = 'noopener noreferrer';
     } else {
       link.addEventListener('click', function (event) {
         event.preventDefault();

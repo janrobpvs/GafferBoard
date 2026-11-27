@@ -116,6 +116,37 @@ h3 { font-family: var(--display); font-weight: 600; font-size: 1.4rem; line-heig
 .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 1.4rem 1.4rem; }
 .download-panel { max-width: 38rem; border-color: rgba(59,224,113,0.45); box-shadow: 0 0 40px rgba(59,224,113,0.1); }
 .cta-panel { margin-top: 2rem; }
+.release-badge {
+  display: inline-block;
+  margin: 0 0 0.65rem;
+  padding: 0.18rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--green);
+  background: rgba(59, 224, 113, 0.1);
+  border: 1px solid rgba(59, 224, 113, 0.35);
+}
+.whats-new {
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+.whats-new h3 {
+  font-size: 1.1rem;
+  color: var(--green);
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+.whats-new-list {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.whats-new-list li { margin-bottom: 0.35rem; }
+.whats-new-list strong { color: var(--text); }
 
 /* faq and support side by side */
 .duo { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 2.25rem; align-items: start; }
