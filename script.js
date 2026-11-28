@@ -8,7 +8,7 @@
   //    VIRUSTOTAL_URL example: 'https://www.virustotal.com/gui/file/...'
   // ============================================================
   var DOWNLOAD_URL = 'https://github.com/janrobpvs/GafferBoard/releases/latest';
-  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/c3e6bd3a34ba601799da0ca24bfc1669c21eb43127041c2da705819ffffd6ab8';
+  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/708776e5d90197545b304f7d1e167262816d28b58257581af4cb4bf2dfc88100';
   var ISSUES_URL = 'https://github.com/janrobpvs/GafferBoard/issues';
 
   // ============================================================
@@ -34,8 +34,8 @@
     c2h: 'Planlegg smartere overganger', c2p: 'Behold, lån ut, selg og kjøp, med ditt faktiske budsjett for hvert vindu.',
     c3h: 'Bygg for fremtiden', c3p: 'Følg ungdomstalenter og planlegg stallutviklingen flere sesonger frem.',
 
-    vBadge: 'Siste versjon: v1.1 · Windows 10/11 · 5 språk',
-    wnH3: 'Nytt i v1.1',
+    vBadge: 'Siste versjon: v1.1.1 · Windows 10/11 · 5 språk',
+    wnH3: 'Nytt i v1.1.1',
     wn1: '<strong>5 språk:</strong> Engelsk, norsk, tysk, fransk – og nå polsk.',
     wn2: '<strong>1-klikks auto-oppdatering:</strong> Sjekker GitHub Releases anonymt og verifiserer SHA-256-sjekksum automatisk.',
     wn3: '<strong>Oppgradert Shortlist:</strong> Ekte FM27-posisjonskjennskap (Natural / Accomplished), ubegrenset flernivå-sortering og markedsverdi ved stjernene.',
@@ -100,7 +100,7 @@
     dlH2: 'Klar til å bygge fremtidens stall?',
     dlP: 'Last ned GafferBoard i dag.',
     proof2: 'Ingen registrering. Ingen reklame. Ingen abonnement.',
-    dlLatest: 'Last ned siste versjon (v1.1)',
+    dlLatest: 'Last ned siste versjon (v1.1.1)',
 
     faqH2: 'Spørsmål',
     faqCat1: 'Kom i gang og kompatibilitet',
@@ -155,6 +155,8 @@
 
     copy: '© 2026 GafferBoard · Laget av JRMP',
     disclaimer: 'Uoffisielt fanverktøy. Ikke tilknyttet, støttet av eller knyttet til Sports Interactive eller SEGA.',
+    fmsaveCreditPrefix: 'Skrivebeskyttet lesing av FM27-saver drives av',
+    fmsaveCreditSuffix: '(MIT-lisens) av Randal S. Olson.',
     footCookies: 'Innstillinger for informasjonskapsler',
 
     cbText: 'Denne nettsiden bruker informasjonskapsler til anonym besøksstatistikk (Google Analytics). Godtar du det?',
