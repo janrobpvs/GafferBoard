@@ -8,7 +8,7 @@
   //    VIRUSTOTAL_URL example: 'https://www.virustotal.com/gui/file/...'
   // ============================================================
   var DOWNLOAD_URL = 'https://github.com/janrobpvs/GafferBoard/releases/latest';
-  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/708776e5d90197545b304f7d1e167262816d28b58257581af4cb4bf2dfc88100';
+  var VIRUSTOTAL_URL = 'https://www.virustotal.com/gui/file/6fe34dadcbd17aef15654278ff97dde8741c6cf12e8530ee5e7cbc3cecf4db39';
   var ISSUES_URL = 'https://github.com/janrobpvs/GafferBoard/issues';
 
   // ============================================================

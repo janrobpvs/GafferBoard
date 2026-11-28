@@ -3,8 +3,8 @@
     "releasedAt":  "2026-11-28",
     "releaseUrl":  "https://github.com/janrobpvs/GafferBoard/releases/tag/v1.1.1",
     "exeUrl":  "https://github.com/janrobpvs/GafferBoard/releases/download/v1.1.1/GafferBoard-v1.1.1-win64.exe",
-    "exeSha256":  "708776e5d90197545b304f7d1e167262816d28b58257581af4cb4bf2dfc88100",
+    "exeSha256":  "6fe34dadcbd17aef15654278ff97dde8741c6cf12e8530ee5e7cbc3cecf4db39",
     "portableZipUrl":  "https://github.com/janrobpvs/GafferBoard/releases/download/v1.1.1/GafferBoard-v1.1.1-win64-portable.zip",
-    "portableZipSha256":  "5c166503daf29b02b989b1f9c10d29987dc19d58d8236c18362247a9e180afc0",
+    "portableZipSha256":  "3e52e0c82f45c3305e47a9b2f49d5eab46c6b8f3eaf4e88b125761248a2260bc",
     "notes":  "GafferBoard v1.1.1 for Windows 10/11 (64-bit)"
 }
